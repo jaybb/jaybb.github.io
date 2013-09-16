@@ -34,6 +34,15 @@ body {
 ol, ul {
 	list-style: none;
 }
+
+h2 {
+	text-align: right;
+}
+p {
+	text-align: right;
+}
+
+
 blockquote, q {
 	quotes: none;
 }
