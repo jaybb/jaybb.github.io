@@ -48,7 +48,12 @@ table {
 }
 
 /* Add Styles Here */
-body { background-image:url(images/pug.jpg); font-family:Times; font-size:14px; }
+body { background-image:url(images/pug.jpg); 
+	background-color: #cccccc;
+	background-position: right;
+	font-family:Times; 
+	font-size:14px;
+	background-repeat: no-repeat; }
 section#content { margin:0 auto; width:960px; padding:20px 0px; }
 
 h1 { 
