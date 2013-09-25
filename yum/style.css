@@ -54,5 +54,21 @@ table {
 /* END RESET */
 
 
-h1 {font-size: 8em
+h1 {font-size: 4em;
+	background-color: #000000;
+	color: #FFFFFF;
 }
+div { color: #FFFFFF;
+	font-family: sans-serif;
+	font: small;
+	float: right;top:;
+	text-align:center; 
+}
+body {background-color:939393;
+ }
+
+ h2 {font font-size: 2em;
+ 	font-family: sans-serif;
+ 	font: small-caps;
+ }
+
