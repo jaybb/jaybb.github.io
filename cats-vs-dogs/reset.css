@@ -50,51 +50,68 @@ table {
 	border-spacing: 0;
 }
 
-
 /* END RESET */
+
 
 #doog 
 	{
-	float: left;
-	width: 350px;
-	margin: 10px 10px 10px 200px;
-	font-family: Helvetica;
-	font-size: 11px
+		float: left;
+		clear: both;
+		max-width: 350px;
+		margin: 10px 10px 10px 150px;
+		font-family: Helvetica;
+		font-size: 11px
 	}
 
 #caat 
 	{
-	float: left;
-	width: 350px;
-	margin: 10px 200px 10px 10px;
-	font-family: Helvetica;
-	font-size: 11px;
+		float: left;
+		max-width: 350px;
+		margin: 10px 10px 10px 10px;
+		font-family: Helvetica;
+		font-size: 11px;
 	}
 
 h2 
 	{
-	font-family: Helvetica;
-	font-size: 22px; 
-	margin: 10px 10px 10px 0px
+		font-family: Helvetica;
+		font-size: 22px; 
+		margin: 10px 10px 10px 0px
 	}
 
-header 
+li 
 	{
-	float: left;
-	margin: 30px 80px 0px 200px
+    	list-style:none;
+    	float:left;
+    	text-align: center;
+    	margin:10px 10px 30px 10px;
+    	color:white;
+    	text-transform:uppercase;
+    	font-family:Helvetica;
 	}
-li
+
+footer 
 	{
-	list-style: none;
-	float: left;
-	margin: 10px;
-	padding: 10px 15px;
-	text-transform:uppercase;
+		clear: both;
+
 	}
-a
-{
-	text-decoration: none;
-	color: black;
-	font-size: 12px;
+hr 
+	{
+		border: solid;
+		height: 1px;
+		max-width: 1000px;
+	}
+
+header
+	{
+		margin: 0px 0px 0px 300px
+	}
+#title 
+	{
+		margin-right: 9999px
+
+	}
+nav {
+	float: left;
+	max-width: 500px;
 }
-
