@@ -76,7 +76,7 @@ h2
 	{
 		font-family: Helvetica;
 		font-size: 22px; 
-		margin: 10px 10px 10px 0px
+		margin: 10px 10px 10px 0px;
 	}
 
 li 
@@ -95,23 +95,37 @@ footer
 		clear: both;
 
 	}
-hr 
-	{
-		border: solid;
-		
-		max-width: 1000px;
+nav {
+	height: 40px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+
+
 	}
+	
 
 header
 	{
 		margin: 0px 0px 0px 300px
 	}
-#title 
-	{
-		margin-right: 9999px
 
 	}
 nav {
 	float: left;
 	max-width: 500px;
 }
+
+#title h1 a {
+
+ 	display:block;  
+ 	width:300px; 
+ 	height:110px;  
+ 	background:url(images/dogvscat-logo.gif) no-repeat top left; 
+ 	text-indent:-9999px;
+ }
+
+ footer {
+ 	height: 30px;
+ 	border-top: 2px solid black;
+ 	
+ }
