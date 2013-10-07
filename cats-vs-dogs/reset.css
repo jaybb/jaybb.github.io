@@ -1,50 +1,31 @@
-
-
-/* Meyer Reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+	Meyer Reset
+	http://meyerweb.com/eric/tools/css/reset
+	v2.0 | 20110126
+	License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0;
+
 	border: 0;
-	font-size: 100%;
 	font: inherit;
+	font-size: 100%;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -52,66 +33,103 @@ table {
 
 /* END RESET */
 
+/*
+	You should really put the below styles in a separate stylesheet.
+	Also, once you discover Sass, so much redundancy can be removed. Awesome.
+*/
 
-#doog 
-	{
-		float: left;
-		clear: both;
-		max-width: 350px;
-		margin: 10px 10px 10px 150px;
-		font-family: Helvetica;
-		font-size: 11px
-	}
+html, body {
+	width: 100%; height: 100%;
 
-#caat 
-	{
-		float: left;
-		max-width: 350px;
-		margin: 10px 10px 10px 10px;
-		font-family: Helvetica;
-		font-size: 11px;
-	}
-
-h2 
-	{
-		font-family: Helvetica;
-		font-size: 22px; 
-		margin: 10px 10px 10px 0px
-	}
-
-li 
-	{
-    	list-style:none;
-    	float:left;
-    	text-align: center;
-    	margin:10px 10px 30px 10px;
-    	color:white;
-    	text-transform:uppercase;
-    	font-family:Helvetica;
-	}
-
-footer 
-	{
-		clear: both;
-
-	}
-hr 
-	{
-		border: solid;
-		
-		max-width: 1000px;
-	}
-
-header
-	{
-		margin: 0px 0px 0px 300px
-	}
-#title 
-	{
-		margin-right: 9999px
-
-	}
-nav {
-	float: left;
-	max-width: 500px;
+	background-color: #fcfcfc;
+	clear: left;
+	color: #191919;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em; /* it is better to work with ems, for the future ~ high density displays are becoming the norm */
+	line-height: 1.3em;
 }
+
+header {
+	margin: 1rem 0; /* Relative EM units. Best thing since sliced Internet bread */
+	width: 100%;
+}
+
+#title {
+	width: 445px; height: 95px;
+
+	background-image: url("images/dogvscat-logo.gif");
+	background-size: 445px 95px;
+	margin: 0 auto;
+
+	/*
+		The below code will allow you to semantically place text when CSS is turned off, but also allow the image to show.
+		The old way of doing this was to create a negative margin like "-9999px", because the biggest monitor size when
+		that fix was used was something like 1024x768. Someone with an iMac/Cinema Display would see text today.
+	*/
+	color: transparent;
+	font-size: 0;
+	line-height: 0;
+}
+
+nav, footer {
+	border-top: 1px solid #191919;
+	border-bottom: 1px solid #191919;
+	box-sizing: border-box; /* Okay, THIS is the best thing since sliced Internet JAM SON! */
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 1rem;
+	text-align: center;
+}
+
+li {
+	color: #fcfcfc; /* my favorite white */
+	display: inline-block;
+	list-style: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* NOPE
+hr {
+	border: 1px solid #191919;
+	max-width: 1000px;
+}
+*/
+
+.article-wrapper {
+	width: 55%; height: auto;
+	margin: 0 auto; padding: 1rem 0;
+
+	box-sizing: border-box;
+	display: table;
+	position: relative;
+}
+
+article {
+	width: 350px; height: auto;
+	float: left;
+}
+
+h2, p { text-align: center; }
+
+h2 {
+	font-size: 22px;
+	padding: 1rem 0 0 0;
+}
+
+p {
+	box-sizing: border-box;
+	padding: 1rem;
+}
+
+footer {
+	border-bottom: 0;
+	clear: both;
+	margin: 1rem auto;
+}
+
+/*
+	It is usually best to list your CSS styles in the same order as the HTML elements. Also, you may have noticed
+	that I listed the CSS properties in order, aside from the ones that usually go together, like "width/height",
+	and "margin/padding".
+*/
