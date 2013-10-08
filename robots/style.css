@@ -50,3 +50,64 @@ table {
 	border-spacing: 0;
 }
 
+/*   end of da reset homie  */
+body{
+	background-color: green;
+}
+
+#site-header h1 a { 
+	display:block;
+	height: 200px;
+	text-indent:-9999px;
+	position:absolute;
+	width:300px; height:80px;
+	background:url(images/logo.png) no-repeat left top;
+
+}
+
+h1 {color:brown;
+	font-size: 3em;
+	font-family: sans-serif;
+	font-variant: small-caps;
+	}
+
+
+#main-menu a {
+	color: white;
+	float: left;
+	width: 100px;
+	font-family: sans-serif;
+	text-decoration: none;
+
+}
+
+
+
+article {}
+
+
+aside {}
+
+footer {}
+
+
+#footer-follow {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
