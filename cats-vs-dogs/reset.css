@@ -96,13 +96,18 @@ footer
 
 	}
 nav {
+	margin:0 auto;
 	height: 40px;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
+}
 
-
-	}
-	
+nav a {
+	margin:0px auto;
+	text-decoration: none;
+	color: black;
+	font-style:uppercase;
+}	
 
 header
 	{
