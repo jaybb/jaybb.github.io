@@ -52,10 +52,23 @@ table {
 
 /*   end of da reset homie  */
 body{
-	background-color: green;
+	background-color: white;
+}
+header {
+	position: relative;
+	background-color: #ecf2d3;
+	width: auto;
+	height: 100px;
+}
+footer {
+	background-color: #875c33;
+}
+nav {
+	background-color: #875c33;
 }
 
 #site-header h1 a { 
+	position: absolute;
 	display:block;
 	height: 200px;
 	text-indent:-9999px;
@@ -65,7 +78,9 @@ body{
 
 }
 
-h1 {color:brown;
+h1 {
+	clear: both;
+	color:#875c33;
 	font-size: 3em;
 	font-family: sans-serif;
 	font-variant: small-caps;
@@ -73,18 +88,29 @@ h1 {color:brown;
 
 
 #main-menu a {
-	color: white;
 	float: left;
+	background-color: #875c33;
+	color: white;
 	width: 100px;
 	font-family: sans-serif;
 	text-decoration: none;
 
 }
+#top-nav {
+	background-color: #ecf2d3;
+	width: auto;
+	float: left;
+
+}
 
 
+article {
 
-article {}
-
+}
+#page {
+	clear: both;
+	width: 400px;
+}
 
 aside {}
 
