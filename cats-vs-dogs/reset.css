@@ -81,7 +81,7 @@ h2
 
 li 
 	{
-    	list-style:none;
+    	list-style:c;
     	float:left;
     	display: inline-block;
     	text-align: center;
@@ -138,7 +138,8 @@ header
  }
 
 ul { width: 700px; 
-	text-align : center }
+	text-align : center;
+	list-style-type: circle; }
 
 #image {
 	float: left;
