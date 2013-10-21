@@ -63,9 +63,6 @@ header {
 footer {
 	background-color: #875c33;
 }
-nav {
-	background-color: #875c33;
-}
 
 #site-header h1 a { 
 	position: absolute;
@@ -78,13 +75,43 @@ nav {
 
 }
 
+#menu-wrapper {
+	width: 1000px;
+
+
+
+
+}
+
 h1 {
+	margin: 0px 0px 0px 300px;
+	width: 450px;
 	clear: both;
 	color:#875c33;
 	font-size: 3em;
 	font-family: sans-serif;
-	font-variant: small-caps;
+	text-transform: uppercase;
+
 	}
+h2 {
+	margin: 0px 0px 0px 300px;
+	width: 450px;
+	clear: both;
+	color:#875c33;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+p {
+	font-size: 14px;
+	font-family: sans-serif;
+	margin: 0px 0px 0px 300px;
+	width: 450px;
+	float: left;
+	line-height:20px;
+	margin-bottom: 1em;
+}
+
 
 
 #main-menu a {
@@ -99,27 +126,54 @@ h1 {
 #top-nav {
 	background-color: #ecf2d3;
 	width: auto;
-	float: left;
+	float: right;
 
 }
 
 
-article {
+
+
+aside {
+	position: absolute;
+	padding: 40px;
+	left:600px;
+	top: 125px;
+}
+aside h1 {
+	font-size: 1em;
 
 }
-#page {
-	clear: both;
-	width: 400px;
+
+
+aside ul {
+	margin-left:300px; 
 }
 
-aside {}
+aside ul a {
+	color: #875c33;
+	line-height: 30px;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+aside img {
+	margin-left:300px 
+}
+footer {
+	height: 200px;
+	color: white;
+	background-color:#875c33;
+	
 
-footer {}
+}
+footer h1 {
+	color: white;
+	font-size: 1em;
+}
 
-
-#footer-follow {}
-
-
+#footer-wrapper {
+	height: 200px;
+	position: relative;
+}
 
 
 
