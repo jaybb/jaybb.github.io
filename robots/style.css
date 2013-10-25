@@ -164,6 +164,7 @@ aside img {
 }
 
 footer {
+	font-size:10px;
 	background-color: red;
 	height: 20px;
 }
