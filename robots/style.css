@@ -51,6 +51,9 @@ table {
 }
 
 /*   end of da reset homie  */
+
+
+
 body{
 	background-color: white;
 }
@@ -60,10 +63,6 @@ header {
 	width: auto;
 	height: 100px;
 }
-footer {
-	background-color: #875c33;
-}
-
 #site-header h1 a { 
 	position: absolute;
 	display:block;
@@ -158,28 +157,16 @@ aside ul a {
 aside img {
 	margin-left:300px 
 }
+
+
+#social li {
+	display:inline-block;
+}
+
 footer {
-	height: 200px;
-	color: white;
-	background-color:#875c33;
-	
-
+	background-color: red;
+	height: 20px;
 }
-footer h1 {
-	color: white;
-	font-size: 1em;
-}
-
-#footer-wrapper {
-	height: 200px;
-	position: relative;
-}
-
-
-
-
-
-
 
 
 
