@@ -126,6 +126,7 @@ p {
 	margin-bottom: 20px;
 }
 #sidebar {
+	padding-left: 50px;
 	float: left;
 	height: 500px;
 	width: 200px%;
@@ -175,13 +176,14 @@ header #top-nav {
 	top: 10px;
 	float: right;
 }
-
-#footer-follow {
+#footer-follow{
+	color: #ccbca0;
+	font-family: sans-serif;
 	float: right;
 }
 
-#footer-follow ul li a img {
-	display: inline;
+#footer-follow ul li a  {
+	display: inline-block;
 }
 
 #footer-contact {
@@ -191,5 +193,6 @@ header #top-nav {
 }
 
 #footer-contact h1 {
+	color: #ccbca0;
 	font-size: 22px;
 }
