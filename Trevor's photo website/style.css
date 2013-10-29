@@ -51,3 +51,24 @@ table {
 }
 
 /*   end of da reset homie  */
+
+#sidebar {
+	position: fixed;
+	float: left;
+	height: 400px;
+	width: 250px;
+	background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
