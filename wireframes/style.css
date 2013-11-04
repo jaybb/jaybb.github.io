@@ -67,8 +67,7 @@ p {
 #users { 
 	width: 450px;
 	font-family: serif;
-	font-family: georgia;
-	color:white;
+	color:#F7F7F7;
 	font-size: 15px;
 	line-height: 22px;
 }
