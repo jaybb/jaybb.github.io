@@ -54,7 +54,7 @@ table {
 /* END RESET */
 
 body {
-	background-color: 
+	background-color: #fefff2; 
 }
 header h1 a {
 	display:block;
@@ -78,13 +78,3 @@ ul li a {
 	text-decoration: none;
 }
 
-#sideBar {
-float: left;
-margin-left: 20px;
-margin-bottom: 40px;
-}
-
-
-p {
-	clear: both;
-}
