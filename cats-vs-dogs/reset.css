@@ -54,13 +54,21 @@ table {
 
 
 header h1 a {
-	display: block;
-	width: 100%;
-	height: 130px;
-	background: url(images/dogvscat-logo.gif)no-repeat top;
-	text-indent: -9999px;
-	margin-top: 30px;
+	margin: 0 auto;
+	display: inline-block;
+	max-width: 100%;
+	font-size: 3em;
+	font-family:"League Gothic";
+	text-decoration: none;
+	color: black;
 
+
+}
+#vs {
+	font-size: 1em;
+	display: inline;
+	font-family: georgia;
+	font-style: italic;
 
 }
 
@@ -108,6 +116,13 @@ body{
 	font-size: 1em;
 }
 
+#logo {
+	margin-top:2%;
+	text-align: center;
+
+
+
+}
 #dogtext {
 	font-size: 1;
 	float: left;
@@ -163,11 +178,11 @@ h2 {
 
 @font-face {
     font-family:"League Gothic";
-    src: url('leaguegothic-regular-webfont.eot');
+    src: url('fonts/leaguegothic-regular-webfont.eot');
     src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-regular-webfont.woff') format('woff'),
-         url('leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+         url('fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('fontsleaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
