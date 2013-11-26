@@ -61,7 +61,7 @@ body {
 
 header h1 a {
 	display:block;
-	width: 100%;
+	width: 20%;
 	height: 120px;
 	background:url(images/logo.png) top left no-repeat;
 	text-indent: -9999px;
@@ -73,8 +73,8 @@ header h1 a {
 	margin: 3% 3% 
 }
 .content-wrapper {
-	display: inline-block;
-	margin: 1px;
+	display: inline;
+	margin: 3% 0;
 	overflow: auto;
 }
 
@@ -85,13 +85,22 @@ header h1 a {
 
 .projectdesc {
 	margin-bottom: 2%;
+	max-width: 90%;
 }
 .projectimg img {
 	display: block;
 }
 
-.post-content {
-	margin-left: 210px;
+.thumbbs {
+	float: left;
+	width: 440px;
+}
+.thumbbs img {
+	max-width: 100%;
+
+}
+.post-content { 
+	margin-right: 2%;
 }
 .post-title {
 	font-size: 2em;

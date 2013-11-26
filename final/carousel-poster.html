@@ -7,10 +7,29 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="JS/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="JS/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="JS/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="JS/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="JS/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="JS/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="JS/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="JS/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
   <!--this is the lightbox jquery links, you should link the librarys and plug ins in here -->
 
+</head>
 
-  </head>
+<body>
+
 <header>
 
 	<h1><a href="http://jayborrelli.com">jay borrelli</a></h1>
@@ -18,7 +37,6 @@
 
 </header>
 
-  <body>
 <nav id="sideBar">
   <ul>
     <li><a href="elements-of-style.html">The Elements of Style</a></li>
@@ -36,7 +54,8 @@
   <div class="projectimg">
     <img alt="final poster" src="images/Carousel/carousel-final1.jpg"/>
   </div>
-  <div class"post-content">
+
+  <div class="post-content">
 
 
   <h3 class="project-title">Carousel Poster</h3>
@@ -44,7 +63,7 @@
     <p class="projectdesc">I poster I designed for iron &amp; wine's song carousel. Here are some other concepts I created before moving forward with my final.
     </p>
       <p>
-    
+    <div class="thumbbs">
     <a class="fancybox" href="images/Carousel/conceptA.jpg" data-fancybox-group="gallery"><img src="images/Carousel/thumbs/A.jpg" alt="" /></a>
 
     <a class="fancybox" href="images/Carousel/conceptB.jpg" data-fancybox-group="gallery"><img src="images/Carousel/thumbs/B.jpg" alt="" /></a>
@@ -56,11 +75,17 @@
     <a class="fancybox" href="images/Carousel/conceptE.jpg" data-fancybox-group="gallery"><img src="images/Carousel/thumbs/E.jpg" alt="" /></a>
 
     <a class="fancybox" href="images/Carousel/conceptF.jpg" data-fancybox-group="gallery"><img src="images/Carousel/thumbs/F.jpg" alt="" /></a>
+  </div>
+  
   </p>
   </div>
 </div>
 
-
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
+</script>
 
 </body>
 </html>

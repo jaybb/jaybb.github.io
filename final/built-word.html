@@ -6,6 +6,23 @@
     <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="JS/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="JS/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="JS/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="JS/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="JS/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="JS/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="JS/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="JS/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+  <!--this is the lightbox jquery links, you should link the librarys and plug ins in here -->
   </head>
 <header>
 
@@ -27,12 +44,39 @@
   </ul>
 </nav> 
 
+<div class="content-wrapper">
+  <div class="projectimg">
+   <object width="600" height="400"><param name="movie" value="//www.youtube.com/v/uqVIp0MKgaU?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/uqVIp0MKgaU?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="600" height="400" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+  </div>
 
-For a typography assignment I created and cast a candle that spelled out the word faith. I then burned the candle and created a stop motion of the candle melting to illustrate the meaning of the word. 
-<img alt="candle melting" src="images/FaithCandle/image1.jpg">
-<img alt="candle melting half" src="images/FaithCandle/image2.jpg">
-<img alt="candle melting" src="images/FaithCandle/image3.jpg">
-<object width="800" height="600"><param name="movie" value="//www.youtube.com/v/uqVIp0MKgaU?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/uqVIp0MKgaU?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="800" height="600" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+  <div class="post-content">
+
+
+  <h3 class="project-title">Built Word</h3>
+
+    <p class="projectdesc">For a typography assignment I created and cast a candle that spelled out the word faith. I then burned the candle and created a stop motion of the candle melting to illustrate the meaning of the word.
+    </p>
+
+      <p>
+    <div class="thumbbs">
+    <a class="fancybox" href="images/FaithCandle/image1.jpg" data-fancybox-group="gallery"><img src="images/FaithCandle/thumbs/A.jpg" alt="" /></a>
+
+    <a class="fancybox" href="images/FaithCandle/image2.jpg" data-fancybox-group="gallery"><img src="images/FaithCandle/thumbs/B.jpg" alt="" /></a>
+
+    <a class="fancybox" href="images/FaithCandle/image3.jpg" data-fancybox-group="gallery"><img src="images/FaithCandle/thumbs/C.jpg" alt="" /></a>
+  </div>
+  
+  </p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
+</script>
+
+
 
 </body>
 </html>
