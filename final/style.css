@@ -54,10 +54,8 @@ table {
 /* END RESET */
 
 body {
-	margin: 0 auto;
-	max-width: 960px;
 	font-size: 16px;
-	font-family: helvetica sans-serif;
+	font-family: sans-serif;
 
 }
 
@@ -70,28 +68,32 @@ header h1 a {
 	padding-top: 15px;
 }
 
-#thumbs  {
-	margin: 0 auto;
-	text-align: center;
-
-}
-
-#thumbs img  {
-	margin: .5% 1.2%;
-}
-
 #sideBar {
-	font-size: .8em;
 	float: left;
-	text-decoration: none;
-	height: 430px;
-	padding: 2em;
-	line-height: 2em;
-	font-family: helvetica sans-serif;
+	margin: 3% 3% 
 }
-#sideBar ul li a {
-	text-decoration: none;
-	font-family: sans-serif;
+.content-wrapper {
+	display: inline-block;
+	margin: 1px;
+	overflow: auto;
+}
 
-	
+.projectimg {
+	float: left;
+	margin-right:15px;
+}
+
+.projectdesc {
+	margin-bottom: 2%;
+}
+.projectimg img {
+	display: block;
+}
+
+.post-content {
+	margin-left: 210px;
+}
+.post-title {
+	font-size: 2em;
+	font-weight: bold;
 }
