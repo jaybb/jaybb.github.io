@@ -84,8 +84,9 @@ header h1 a {
 }
 
 .projectdesc {
-	margin-bottom: 2%;
-	max-width: 90%;
+	float: left;
+	width: 420px;
+	margin-bottom: 15px;
 }
 .projectimg img {
 	display: block;
@@ -93,12 +94,9 @@ header h1 a {
 
 .thumbbs {
 	float: left;
-	width: 440px;
+	width: 420px;
 }
-.thumbbs img {
-	max-width: 100%;
 
-}
 .post-content { 
 	margin-right: 2%;
 }
