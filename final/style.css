@@ -72,6 +72,14 @@ header h1 a {
 	float: left;
 	margin: 3% 3% 
 }
+
+#sideBar li a {
+	text-decoration: none;
+	color: black;
+	font-size: .8em;
+	line-height: 2em;
+}
+
 .content-wrapper {
 	display: inline;
 	margin: 3% 0;
