@@ -88,7 +88,7 @@ header h1 a {
 
 .projectimg {
 	float: left;
-	margin-right:15px;
+	margin-right:2%;
 }
 
 .projectdesc {
@@ -103,6 +103,10 @@ header h1 a {
 .thumbbs {
 	float: left;
 	width: 420px;
+}
+.thumbbs img {
+	margin-right: 1%;
+	margin-bottom: 1%;
 }
 
 .post-content { 
