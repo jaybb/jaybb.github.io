@@ -92,7 +92,7 @@ header h1 a {
 }
 
 .projectdesc {
-	float: left;
+	display: inline-block;
 	width: 420px;
 	margin-bottom: 15px;
 }
