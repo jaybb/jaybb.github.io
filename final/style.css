@@ -86,7 +86,6 @@ h3 {
 
 
 #sideBar {
-	background-color: red;
 	float: left;
 	margin: 3% 3% 
 }
@@ -109,7 +108,6 @@ h3 {
 }
 
 .projectimg {
-	background-color: aquamarine;
 	float: left;
 	margin-right:2%;
 }
@@ -189,6 +187,14 @@ a:visited {
 	display: inline;
 	float: left;
 
+}
+#me-title{
+	float: left;
+
+}
+#medesc {
+	width: 25%;
+	float:left;
 }
 
 @font-face {
