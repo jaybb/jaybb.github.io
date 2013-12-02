@@ -54,19 +54,22 @@ table {
 /* END RESET */
 
 body {
+	background-color: light-gray;
 	font-size: 16px;
 	font-family: sans-serif;
 
 }
 
 header h1 a {
+	text-decoration: none;
+	font-size: 2em;
 	display:block;
-	width: 20%;
-	height: 120px;
-	background:url(images/logo.png) top left no-repeat;
-	text-indent: -9999px;
-	padding-top: 15px;
+	font-family: "texgyreheros-bolditalic";
+	padding-top: 5%;
+	padding-left: 2%;
 }
+
+
 
 #sideBar {
 	float: left;
@@ -78,6 +81,10 @@ header h1 a {
 	color: black;
 	font-size: .8em;
 	line-height: 2em;
+}
+
+#sidebar a:hover{
+	background-color: red;
 }
 
 .content-wrapper {
@@ -115,4 +122,20 @@ header h1 a {
 .post-title {
 	font-size: 2em;
 	font-weight: bold;
+}
+
+h1 {
+	font-family: "texgyreheros-bolditalic";
+}
+
+@font-face {
+    font-family:"texgyreheros-bolditalic";
+    src: url('fonts/texgyreheros-bolditalic-webfont.eot');
+    src: url('ltexgyreheros-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/texgyreheros-bolditalic-webfont.woff') format('woff'),
+         url('fonts/texgyreheros-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/texgyreheros-bolditalic-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
