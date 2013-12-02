@@ -69,7 +69,7 @@ header h1 a {
 	text-decoration: none;
 	font-size: 2em;
 	display:block;
-	font-family: "texgyreheros-bolditalic";
+	font-family: "texgyreheros-bolditalic", sans-serif, helvetica;
 	padding-top: 5%;
 	padding-left: 2%;
 }
