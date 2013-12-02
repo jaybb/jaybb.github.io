@@ -142,85 +142,86 @@ h3 {
 
 }
 
+/* these are the positioning thumbnail icons*/
 
 #carouselposterthumb {
 	position: absolute;
-	left: 0px;
+	left: 440px;
 	top: 0px;
 }
 
 #carouselposterthumbpink {
 	display: none;
 	position: absolute;
-	left: 0px;
+	left: 440px;
 	top: 0px;
 }
 
 #builtwordthumb {
 	position: absolute;
-	left: 220px;
-	top: 0px;
+	left: 440px;
+	top: 220px;
 }
 
 #builtwordthumbpink {
 	display: none;
 	position: absolute;
-	left: 220px;
-	top: 0px;
+	left: 440px;
+	top: 220px;
 }
 
 
 #sneakersthumb {
 	position: absolute;
-	left: 440px;
+	left: 220px;
 	top: 0px;
 }
 
 #sneakersthumbpink {
 	display: none;
 	position: absolute;
-	left: 440px;
+	left: 220px;
 	top: 0px;
 }
 
 #onsuccessthumb {
 	position: absolute;
-	left: 0px;
+	left: 220px;
 	top: 220px;
 }
 
 #onsuccessthumbpink {
 	display: none;
 	position: absolute;
-	left: 0px;
+	left: 220px;
 	top: 220px;
 }
 
 
 #elementsthumb {
 	position: absolute;
-	left: 220px;
-	top: 220px;
+	left: 0px;
+	top: 0px;
 }
 
 #elementsthumbpink {
 	display: none;
 	position: absolute;
-	left: 220px;
-	top: 220px;
+	left: 0px;
+	top: 0px;
 }
 
 
 #firstthingsthumb {
 	position: absolute;
-	left: 440px;
+	left: 0px;
 	top: 220px;
 }
 
 #firstthingsthumbpink {
 	display: none;
 	position: absolute;
-	left: 440px;
+	left: 0px;
 	top: 220px;
 }
 
