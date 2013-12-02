@@ -154,11 +154,11 @@ a:visited {
 
 @font-face {
     font-family:"texgyreheros-bolditalic";
-    src: url('fonts/texgyreheros-bolditalic-webfont.eot');
+    src: url('Fonts/texgyreheros-bolditalic-webfont.eot');
     src: url('ltexgyreheros-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/texgyreheros-bolditalic-webfont.woff') format('woff'),
-         url('fonts/texgyreheros-bolditalic-webfont.ttf') format('truetype'),
-         url('fonts/texgyreheros-bolditalic-webfont.svg#league_gothicregular') format('svg');
+         url('Fonts/texgyreheros-bolditalic-webfont.woff') format('woff'),
+         url('Fonts/texgyreheros-bolditalic-webfont.ttf') format('truetype'),
+         url('Fonts/texgyreheros-bolditalic-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
