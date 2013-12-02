@@ -54,7 +54,6 @@ table {
 /* END RESET */
 
 body {
-	width: 1200px;
 	background-color: #D8D8D8;
 	font-size: 16px;
 	font-family: sans-serif;
@@ -77,6 +76,11 @@ header h1 a {
 	padding-left: 2%;
 }
 
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
 
 
 #sideBar {
@@ -107,8 +111,9 @@ header h1 a {
 }
 
 .projectdesc {
-	display: inline-block;
-	width: 420px;
+	float: left;
+	display: inline;
+	max-width: 30%;
 	margin-bottom: 15px;
 }
 .projectimg img {
@@ -146,6 +151,10 @@ a:visited {
 }
 #sideBar a:hover {
 	background-color: #EC008C;
+}
+
+.contactlinks {
+	float:left;
 }
 .contactlinks a:visited {
 	color: black;
