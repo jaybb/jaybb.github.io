@@ -54,6 +54,8 @@ table {
 /* END RESET */
 
 body {
+	width: 1080px;
+	max-width: 1200px;
 	background-color: #D8D8D8;
 	font-size: 16px;
 	font-family: sans-serif;
@@ -84,6 +86,7 @@ h3 {
 
 
 #sideBar {
+	background-color: red;
 	float: left;
 	margin: 3% 3% 
 }
@@ -95,7 +98,7 @@ h3 {
 	line-height: 2em;
 }
 
-#sidebar a:hover{
+#sideBar a:hover{
 	background-color: red;
 }
 
@@ -106,46 +109,49 @@ h3 {
 }
 
 .projectimg {
+	background-color: aquamarine;
 	float: left;
 	margin-right:2%;
+}
+.projectimg img {
+	display: block;
+	width:100%;
 }
 
 .projectdesc {
 	float: left;
 	display: inline;
-	max-width: 35%;
+	max-width: 30%;
 	margin-bottom: 15px;
-}
-.projectimg img {
-	display: block;
 }
 
 .thumbbs {	
-	display: inline-block;
+	width: 30%;
 	float: left;
-	width: 420px;
+
 }
 .thumbbs img {
+	width: 20%;
 	margin-right: 1%;
 	margin-bottom: 1%;
 }
 
 .indexthumbs {
+	width: 800px;
 	float: left;
 	margin-left: 30px;
-	width: 800px;
+
 }
 
 .indexthumbs img {
 	padding: 1%;
 }
-.post-content { 
-	margin-right: 2%;
-}
+
 .post-title {
 	font-size: 2em;
 	font-weight: bold;
 }
+
 
 a:visited {
 	color: black;
@@ -165,6 +171,25 @@ a:visited {
 	color: black;
 }
 
+#sneakerthumbbs {
+	float: left;
+	display: inline;
+	width: 25%;
+
+}
+
+#sneaker-title {
+	float: left;
+
+}
+
+
+#sneakerdesc {
+	width: 25%;
+	display: inline;
+	float: left;
+
+}
 
 @font-face {
     font-family:"texgyreheros-bolditalic";
