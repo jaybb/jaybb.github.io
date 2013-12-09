@@ -5,7 +5,7 @@ $("#carouselposterthumb").mouseover(function () {
 });
 
 $("#carouselposterthumbpink").mouseout(function () {
-  $("#carouselposterthumbpink").hide();document.getElementById('carouselposter').style.backgroundColor = "#D8D8D8";
+  $("#carouselposterthumbpink").hide();document.getElementById('carouselposter').style.backgroundColor = "#f2f2f2";
 });
 
 
@@ -19,7 +19,7 @@ $("#builtwordthumb").mouseover(function () {
 });
 
 $("#builtwordthumbpink").mouseout(function () {
-  $("#builtwordthumbpink").hide();document.getElementById('builtword').style.backgroundColor = "#D8D8D8";
+  $("#builtwordthumbpink").hide();document.getElementById('builtword').style.backgroundColor = "#f2f2f2";
 });
 
 
@@ -32,7 +32,7 @@ $("#sneakersthumb").mouseover(function () {
 });
 
 $("#sneakersthumbpink").mouseout(function () {
-  $("#sneakersthumbpink").hide();document.getElementById('100sneaks').style.backgroundColor = "#D8D8D8";
+  $("#sneakersthumbpink").hide();document.getElementById('100sneaks').style.backgroundColor = "#f2f2f2";
 });
 
 
@@ -45,7 +45,7 @@ $("#onsuccessthumb").mouseover(function () {
 });
 
 $("#onsuccessthumbpink").mouseout(function () {
-  $("#onsuccessthumbpink").hide();document.getElementById('onsuccess').style.backgroundColor = "#D8D8D8";
+  $("#onsuccessthumbpink").hide();document.getElementById('onsuccess').style.backgroundColor = "#f2f2f2";
 });
 
 
@@ -58,7 +58,7 @@ $("#elementsthumb").mouseover(function () {
 });
 
 $("#elementsthumbpink").mouseout(function () {
-  $("#elementsthumbpink").hide();document.getElementById('style').style.backgroundColor = "#D8D8D8";
+  $("#elementsthumbpink").hide();document.getElementById('style').style.backgroundColor = "#f2f2f2";
 });
 
 
@@ -70,7 +70,7 @@ $("#firstthingsthumb").mouseover(function () {
 });
 
 $("#firstthingsthumbpink").mouseout(function () {
-  $("#firstthingsthumbpink").hide();document.getElementById('firstthingsfirst').style.backgroundColor = "#D8D8D8";
+  $("#firstthingsthumbpink").hide();document.getElementById('firstthingsfirst').style.backgroundColor = "#f2f2f2";
 });
 
 

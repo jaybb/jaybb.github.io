@@ -56,7 +56,7 @@ table {
 body {
 	width: 1080px;
 	max-width: 1200px;
-	background-color: #D8D8D8;
+	background-color: #f2f2f2;
 	font-size: 16px;
 	font-family: sans-serif;
 
@@ -86,6 +86,8 @@ h3 {
 }
 
 
+
+
 #sideBar {
 	float: left;
 	margin: 3% 3% 
@@ -98,6 +100,10 @@ h3 {
 	line-height: 2em;
 }
 
+#style a:hover{
+	background-color: #ec008c;
+
+}
 #sideBar a:hover{
 	background-color: #ec008c;
 }
@@ -245,13 +251,14 @@ a:visited {
 	color: black;
 }
 #sideBar a:hover {
-	background-color: none;
+	background-color: #ec008c;
 }
 
 .contactlinks {
 	float:left;
 }
 .contactlinks a:visited {
+	background-color:#ec008c;
 	color: black;
 	text-decoration: none;
 }
