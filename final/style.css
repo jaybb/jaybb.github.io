@@ -294,7 +294,18 @@ a:visited {
 	float:left;
 }
 
-
+#beimg {
+	margin-top: 10px;
+	margin-right: 2px;
+}
+#twitterimg {
+	margin-top: 10px;
+	margin-right: 2px;
+}
+#linkedimg {
+	margin-top: 10px;
+	margin-right: 2px;
+}
 
 @font-face {
     font-family:"texgyreheros-bolditalic";
