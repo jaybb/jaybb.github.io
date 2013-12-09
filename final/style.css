@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	margin: auto;
 	line-height: 1;
 }
 ol, ul {
@@ -54,6 +55,7 @@ table {
 /* END RESET */
 
 body {
+	margin: auto;
 	width: 1080px;
 	max-width: 1200px;
 	background-color: #f2f2f2;
@@ -86,7 +88,9 @@ h3 {
 }
 
 
-
+#e {
+	font-weight: bold;
+}
 
 #sideBar {
 	float: left;
@@ -123,7 +127,7 @@ h3 {
 .projectdesc {
 	float: left;
 	display: inline;
-	max-width: 30%;
+	max-width: 25%;
 	margin-bottom: 15px;
 }
 
@@ -249,7 +253,7 @@ a {
 
 }
 a:visited {
-	color: black;
+	color: black; 
 }
 #sideBar a:hover {
 	background-color: #ec008c;
