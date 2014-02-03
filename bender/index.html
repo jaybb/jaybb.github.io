@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Cantarell:400,400italic' rel='stylesheet' type='text/css'>
+  <title>TRU</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+    <!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="JS/jquery_cycle_all.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="JS/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+
+
+
+</head>
+<body>
+<div class="top"></div>
+<div class="base"></div>
+<div class="base2"></div>
+<div class='head'>
+<div class="eye-container"></div>
+<div class="eye-container2"></div>
+<div class='eyes'></div>
+<div class="dot"></div>
+<div class="dot2"></div>
+<div class='smile'>
+<div class="smilesquare1"></div>
+<div class="smilesquare2"></div>
+<div class="smilesquare3"></div>
+<div class="smilesquare4"></div>
+<div class="smilesquare5"></div>
+</div>
+
+<style>
+
+.top {
+position:absolute;
+left:93px;
+top:15px;
+width:30px;
+height:30px;
+background-color:lightgray;
+border-radius:50%;
+z-index:1;
+}
+
+.base{
+width:20px;
+height:80px;
+position:absolute;
+top:22px;
+left:98px;
+background-color:gray;
+border-radius: 30% 30% 0 0;
+}
+
+.base2{
+width:60px;
+height:20px;
+position:absolute;
+top:85px;
+left:78px;
+background-color:lightgray;
+border-radius: 30% 30% 0 0;
+z-index:2;
+}
+
+
+.head { 
+top:100px;
+width:200px; 
+height:200px; 
+border-radius:50% 50% 0 0 ; 
+background-color:gray; 
+position:absolute;}
+
+
+.dot{
+position:absolute;
+top:75px;
+left:65px;
+width:10px;
+height:10px;
+background-color:black;
+border-radius:50%;
+}
+
+.dot:after {
+  content:"";
+position:absolute;
+top:0px;
+left:60px;
+width:10px;
+height:10px;
+background-color:black;
+border-radius:50%;
+}
+
+.smile {
+  position:absolute;
+  top: 130px;
+  left: 25px;
+  width: 150px;
+  height: 50px;
+  background-color:lightyellow;
+  border-top:none;
+}
+
+.smilesquare1 {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 45px;
+  border-style:solid;
+  border
+  border-top:none;
+}
+.smilesquare2 {
+  position:absolute;
+  top: 0px;
+  left: 50px;
+  width: 45px;
+  height: 45px;
+  border-style:solid;
+  border
+  border-top:none;
+}
+.smilesquare3 {
+  position:absolute;
+  top: 0px;
+  left: 97px;
+  width: 50px;
+  height: 45px;
+  border-style:solid;
+  border
+  border-top:none;
+}
+
+.smilesquare4 {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 147px;
+  height: 30px;
+  border-style:solid;
+  border
+  border-top:none;
+}
+
+.smilesquare5 {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 147px;
+  height: 15px;
+  border-style:solid;
+  border
+  border-top:none;
+}
+
+
+
+
+.eyes { 
+  width:50px;
+  height:50px;
+  background-color:lightyellow;
+  border-style:solid;
+  position:absolute;
+  left:40px;
+  top:50px;
+  border-radius:50%;
+}
+.eyes:after { 
+  content:"";
+  width:50px;
+  height:50px;
+  background-color:lightyellow;
+  border-style:solid;
+  position:absolute;
+  left:60px;
+  top:0px;
+  border-radius:50%;
+}
+
+.eye-container{
+position:absolute;
+top:40px;
+left:10px;
+width:180px;
+height:70px;
+background-color:black;
+border-radius:50%;
+
+}
+
+.eye-container2{
+position:absolute;
+top:40px;
+left:8px;
+width:180px;
+height:65px;
+border-style:solid;
+border-color:lightgray;
+border-radius:50%;
+
+}
+
+
+
+</style>
+
+</body>
+</html>
