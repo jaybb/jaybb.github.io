@@ -53,12 +53,29 @@ table {
 /*   end of da reset homie  */
 
 
-
-.left-triangle {
+.top-triangle {
+  position: absolute;
+  top: 150px;
+  left: 150px;
   width: 0px;
   height: 0px;
-  border-top: 300px solid transparent;
-  border-right: 600px solid lightblue;
-  border-bottom: 300px solid transparent;
+  border-top: 100px solid transparent;
+  border-radius-bottom: 50%;
+  border-left: 50px solid red;
+  border-bottom: 0px solid transparent;
+  -webkit-transform: rotate(-100deg);
+
+
+
+}
+.left-triangle {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 0px;
+  height: 0px;
+  border-top: 100px solid transparent;
+  border-left: 300px solid lightblue;
+  border-bottom: 0px solid transparent;
 
 }
