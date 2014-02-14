@@ -89,6 +89,7 @@ body {
   width: 75px;
   background-color: gray;
   border-radius: 50%;
+  z-index: -1;
 
 }
 .label{
