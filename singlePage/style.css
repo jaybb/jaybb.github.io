@@ -59,14 +59,11 @@ body {
 }
 header{
 	margin: 0 auto;
-	width: 90%;
-	max-width: 1148px;
-	height: 100px;
-	background-color: darkgray;
+	width: 1148px;
+	height: 50px;
 }
 
 header h1 {
-	margin: 10px 30px;
 	float: left;
 	display: inline;
 	font-size: 3em;
@@ -74,9 +71,12 @@ header h1 {
 }
 
 header h1 a {
-	background-color: pink;
 	text-decoration: none;
 	color:white;
+}
+#logo {
+	width: 350px;
+	height: 75px;
 }
 
 footer{
@@ -85,15 +85,26 @@ footer{
 	margin-bottom: 25px;
 	width: 90%;
 	max-width: 1148px;
-	background-color: lightblue;
+	text-align: right;
 	font-family: 'Inconsolata', sans-serif;
 }
 
+footer a {
+	text-decoration: none;
+	margin-left: 20px;
+	color: white;
+
+}
+
+
+
+
 
 #topNav {
-	margin: 30px 30px;
+	margin: 15px 0 0 0;
 	float: right;
 	font-family: 'Inconsolata', sans-serif;
+	font-size: 20px;
 }
 
 #topNav ul li {
@@ -102,15 +113,29 @@ footer{
 
 #topNav ul li a {
 	text-decoration: none;
-	background-color: lightblue;
 	color: white;
 }
 
+.navButton{
+	height: 25px;
+	width: 160px;
+	text-align: center;
+
+}
 #canvas {
 	margin: 0 auto;
-	width: 90%;
 	max-width: 1148px;
+	height: 90%;
 	background-color: lightgray;
+	opacity: 0.8;
+}
+
+#detailCanvas {
+	margin: 0 auto;
+	max-width: 1148px;
+	height: 600px;
+	background-color: lightgray;
+	opacity: 0.8;
 }
 
 .sneakerObject {
@@ -136,11 +161,45 @@ footer{
 
 /* this is where i begin styling the detail page */ 
 .detailImages{
+	margin: 30px;
 	display: inline-block;
 }
 .detailSidebar{
-	max-width: 554px;
+	float: right;
+	margin: 30px 20px 10px 0px;
+	max-width: 500px;
 	width: 50%;
 	display: inline-block;
+
+}
+.detailSmallThumbs img {
+	margin-top: 5px;
+	margin-right: 6px;
 }
 
+.sneakerName {
+	margin-bottom: 20px;
+	font-size: 2.2em;
+	font-family: 'Carrois Gothic SC', sans-serif;
+}
+.sneakerDesc {
+	font-size: 15px;
+	line-height: 1.3em;
+	font-family: 'Inconsolata', sans-serif;
+}
+
+.detailButtons {
+	margin-top: 30px;
+	text-align: right;
+}
+.cart {
+
+	height: 30px;
+	width: 130px;
+}
+
+.size {
+
+	height: 30px;
+	width: 60px;
+}
