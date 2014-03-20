@@ -84,7 +84,7 @@ footer{
 	margin-top: 25px;
 	margin-bottom: 25px;
 	width: 90%;
-	max-width: 1148px;
+	width: 1148px;
 	text-align: right;
 	font-family: 'Inconsolata', sans-serif;
 }
@@ -125,7 +125,6 @@ footer a {
 #canvas {
 	margin: 0 auto;
 	max-width: 1148px;
-	height: 90%;
 	background-color: lightgray;
 	opacity: 0.8;
 }
