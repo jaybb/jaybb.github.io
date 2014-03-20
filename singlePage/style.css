@@ -102,6 +102,8 @@ footer a {
 
 #topNav {
 	margin: 15px 0 0 0;
+	width: 44%;
+	min-width: 800px;
 	float: right;
 	font-family: 'Inconsolata', sans-serif;
 	font-size: 20px;
@@ -129,12 +131,11 @@ footer a {
 	opacity: 0.8;
 }
 
-#detailCanvas {
+.detailCanvas {
 	margin: 0 auto;
-	max-width: 1148px;
-	height: 600px;
-	background-color: lightgray;
-	opacity: 0.8;
+	width: 1148px;
+	position: relative;
+	background-color: gray;
 }
 
 .sneakerObject {
@@ -166,14 +167,18 @@ footer a {
 	display: inline-block;
 }
 .detailSidebar{
+	position: absolute;
 	float: right;
 	margin: 30px 20px 10px 0px;
-	max-width: 500px;
-	width: 50%;
+	width: 450px;
 	display: inline-block;
 
 }
+.detailSmallThumbs{
+	display: block;
+}
 .detailSmallThumbs img {
+	display: inline;
 	margin-top: 5px;
 	margin-right: 6px;
 }
@@ -184,6 +189,7 @@ footer a {
 	font-family: 'Carrois Gothic SC', sans-serif;
 }
 .sneakerDesc {
+	display: block;
 	font-size: 15px;
 	line-height: 1.3em;
 	font-family: 'Inconsolata', sans-serif;
@@ -201,6 +207,6 @@ footer a {
 
 .size {
 
-	height: 30px;
+	height: 50px;
 	width: 60px;
 }
