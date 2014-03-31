@@ -224,14 +224,19 @@ footer a {
 
 .details {
   position:fixed;
+  display:inline;
   left:0px;
   right:0px;
   top:0px;
   bottom:0px;
   margin:auto;
-  width:500px;
-  height:400px;
+  width:700px;
+  height:500px;
   background-color:white;
   padding:20px 50px;
   border-radius:10px;
+}
+
+#detail-description {
+	line-height: 1.2em;
 }
