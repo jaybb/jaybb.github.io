@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	  <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+      <script src='robots.js'></script>
+      <script src='application.js'></script>
 	<meta charset="UTF-8">
 	<title>Sneaker Spot</title>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
@@ -50,7 +53,7 @@
 
 			<div class="sneakerObject">
 				<div class="sneakerImage">
-					<a href="detail.html">
+					<a href="">
 						<img alt="gel lyte image" src="images/gelLyte.jpg">
 					</a>
 				</div>
@@ -158,6 +161,31 @@
 				</ul>
 				</div> 
 			</div>
+
+		
+
+			<div class='overlay'></div>
+    <div class='details'>
+      <h2 id='detail-title'>Asics Gel Lyte III "Volcano"</h2>
+      <img id='detail-image' src='images/gelLyte.jpg' alt='gliii'/>
+      <p id='detail-description'>
+        The fiery “Volcano” colorway, is apparently inspired in part by Fieg’s KITH shop at last reaching a point of eruption within the sneaker community as it entered its second year of business. Released in ultra limited numbers this exclusive collaboration was only avaliable at KITH NYC. 
+      </p>
+      <div class='clear'></div>
+      <div id='detail-price'>
+        $24.94
+      </div>
+      <div id='detail-options'>
+        Quantity: 
+        <select id='detail-quantity'>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+        </select>
+
+        <button id='add-to-cart'>Add To Cart</button>
+      </div>
+    </div>
 
 
 		</div> <!--this is the canvas div-->
