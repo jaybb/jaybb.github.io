@@ -53,9 +53,10 @@ table {
 
 
 #siteContainer {
-	width: 100%;
-	height: 3200px;
-	background-image: url('images/singlescroll/01.jpg'),url('images/singlescroll/02.jpg'),url('images/singlescroll/03.jpg');
+	height: 3050px;
+	background-image: url('images/singlescroll/01.jpg'),
+					  url('images/singlescroll/02.jpg'),
+					  url('images/singlescroll/03.jpg');
 	background-repeat: no-repeat;
 	background-position: 0 0, 0 1000px, 0 2000px;
 }
@@ -63,8 +64,7 @@ table {
 
 
 body{
-	max-width: 1500px;
-	height: 3200px;
+	height: 3050px;
 	background-color: darkgray;
 }
 
@@ -80,8 +80,8 @@ h1 {
 	font-size: 70px;
 	font-family: 'akzidenz-grotesk_condensed_Rg';
 }
+
 header{
-	display: none;
 	background-color: white;
 	width: 100%;
 	height: 75px;
@@ -90,21 +90,29 @@ header{
 	opacity: 0.8;
 }
 
+header ul {
+	padding: 15px 50px 0 50px;
+}
+
 header ul li {
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	font-size:28px;
+	text-transform: uppercase;
+
 	display: inline;
-
 }
 
-#circle {
-	position: relative;
-	top: 200px;
-	left: 150px;
-	width: 500px;
-	height: 500px;
-	border-radius: 50%;
-	background-color: black;
-	opacity: .9;
+header ul li a {
+	text-decoration: none;
+	color: black;
 }
+
+header ul li  :hover {
+	text-decoration: underline;
+	color: black;
+}
+
 #introduction {
 	position: relative;
 	color: white;
@@ -115,40 +123,29 @@ header ul li {
 
 #secondPageType {
 	position: absolute;
-	color: white;
 	top: 1000px;
 	width: 300px;
-}
+	color: white;
+	font-family: sans-serif;
 
-#secondPageTypeDetail {
-	font-family: helvetica, sans-serif;
-	font-weight: lighter;
-	line-height: 2em;
-	position: relative;
-	width: 80%;
-	margin-left: 10%;
-	top: 130px;
 }
 
 #thirdPageType {
-	max-width: 1500px;
-	width: 90%;
 	position: absolute;
 	top: 2000px;
-	color: white;
 }
 
-#productList {
-	width: 100%;
-}
-.products {
-	position: relative;
-
-
-}
-
-.products li {
+#productList ul li  {
 	float: left;
+}
+
+.topNav {
+	float: right;
+	padding-left: 50px;
+
+
+}
+.centerPlease {
 }
 
 footer {
@@ -171,4 +168,42 @@ footer {
     font-weight: normal;
     font-style: normal;
 
+}
+
+
+
+
+
+
+
+/*overlay*/
+
+.overlay {
+  display: none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:black;
+  opacity:0.5;
+}
+
+.details {
+  display: none;
+  position:fixed;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+  width:700px;
+  height:500px;
+  background-color:white;
+  padding:20px 50px;
+  border-radius:10px;
+}
+
+#detail-description {
+	line-height: 1.2em;
 }

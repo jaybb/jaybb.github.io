@@ -2,89 +2,111 @@
 <html>
   <head>
      <link href='style.css' rel='stylesheet'/>
+     <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+     <script src='sneakers.js'></script>
+     <script src='application.js'></script>
+
   	<title>
-      this is my single scroll test site
+      MiniMal Kicks
 	</title>
 
   </head>
 
 
   <body>
-		<section id="siteContainer">
 			<header>
 				<ul>
 					<li>
-						minimal kicks
+						<a href="top">minimal kicks</a>
 					</li>
-					<li>
-						about us
+					<li class="topNav">
+						<a href="about">about us</a>
 					</li>
-					<li>
-						products
+					<li class="topNav">
+						<a href="products">products</a>
 					</li>
 				</ul>
 			</header>
 
+
+			<section id="siteContainer">
 					
-			<div id="firstPageType">
-				<h1>MINIMAL KICKS
-					<div id="introduction">
-					you want em, we got em
-					</div> <!-- intro div close -->
-				</h1>
-			
-
-			</div>
-
-			<div id="secondPageType">
-				<div id="circle">
-					<div id="wedo">
-						Who We Are
-						<div id="secondPageTypeDetail">
-							We are a team of hard working entrepreneurs curating a premier online shopping experience for those looking for the most premium footwear and apparel products for the most reasonable prices.
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="thirdPageType">
-				<div id="ourProducts">
-					Our Products:
-				</div>
+					<h1>
+						MINIMAL KICKS
+					</h1>
 				
 
-				<div id="productList">
-					<ul class="products">
-						<li class = "product" data-product-id="Hurrache Trainer">
-							<img src="images/hurrache.jpg" alt="Hurrache Trainer"/>
-						</li>
-						<li class = "product" data-product-id="Gel Lyte III">
-							<img src="images/gelLyte.jpg" alt="Gel Lyte III"/>
-						</li>
-						
-						<li class = "product" data-product-id="Jordan VI">
-							<img src="images/jordanvi.jpg" alt="urrache trainer"/>
-						</li>
-						
-						<li class = "product" data-product-id="KA II">
-							<img src="images/kaii.jpg" alt="KA II"/>
-						</li>
-						
-						<li class = "product" data-product-id="Sk8 Hi">
-							<img src="images/sk8hi.jpg" alt="Sk8 Hi"/>
-						</li>
+					<div class="centerPlease">
+						<div id="secondPageType">
+								
+								Who We Are
+								We are a team of hard working entrepreneurs curating a premier online shopping experience for those looking for the most premium footwear and apparel products for the most reasonable prices.
+						</div>
+					</div>
 			
-						<li class = "product" data-product-id="Lebron XI">
-							<img src="images/lebronxi.jpg" alt="Lebron XI"/>
-						</li>
-					</ul>
+				<div id="thirdPageType">
+					<div id="ourProducts">
+						Our Products:
+					</div>
+					
+
+					<div id="productList">
+						<ul class="products">
+							<li class = "product" data-product-id="Hurrache Trainer">
+								<img src="images/hurrache.jpg" alt="Hurrache Trainer"/>
+							</li>
+							<li class = "product" data-product-id="Gel Lyte III">
+								<img src="images/gelLyte.jpg" alt="Gel Lyte III"/>
+							</li>
+							
+							<li class = "product" data-product-id="Pump Fury">
+								<img src="images/pumpfury.jpg" alt="Reebok Pump Fury"/>
+							</li>
+							
+							<li class = "product" data-product-id="KA II">
+								<img src="images/kaii.jpg" alt="KA II"/>
+							</li>
+							
+							<li class = "product" data-product-id="Sk8 Hi">
+								<img src="images/sk8hi.jpg" alt="Sk8 Hi"/>
+							</li>
+				
+							<li class = "product" data-product-id="Lebron XI">
+								<img src="images/lebronxi.jpg" alt="Lebron XI"/>
+							</li>
+						</ul>
+					</div>
 				</div>
-			
-		<footer>
-				Minimal Kicks
-				1818 Beacon St.
-				Boston MA 02120
-			</footer>
-			</div>
+
+
+						<div class='overlay'></div>
+						    <div class='details'>
+						      <h2 id='detail-title'>Asics Gel Lyte III "Volcano"</h2>
+						      <img id='detail-image' src='images/gelLyte.jpg' alt='gliii'/>
+						      <p id='detail-description'>
+						        The fiery Volcano colorway, is apparently inspired in part by Fiegs KITH shop at last reaching a point of eruption within the sneaker community as it entered its second year of business. Released in ultra limited numbers this exclusive collaboration was only avaliable at KITH NYC. 
+						      </p>
+						      <div class='clear'></div>
+						      <div id='detail-price'>
+						        $24.94
+						      </div>
+						      <div id='detail-options'>
+						        Quantity: 
+						        <select id='detail-quantity'>
+						          <option value='1'>1</option>
+						          <option value='2'>2</option>
+						          <option value='3'>3</option>
+						        </select>
+
+						        <button id='add-to-cart'>Add To Cart</button>
+						      </div>
+						    </div>
+
+			<footer>
+					Minimal Kicks
+					1818 Beacon St.
+					Boston MA 02120
+				</footer>
 
 	
 
