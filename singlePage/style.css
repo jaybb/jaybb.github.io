@@ -53,166 +53,31 @@ table {
 
 /* END RESET */
 
-body {
-	background-image:url(images/tweed.png);
 
-}
-header{
-	margin: 0 auto;
-	width: 1148px;
-	height: 50px;
-}
 
-header h1 {
-	float: left;
+
+header {
 	display: inline;
-	font-size: 3em;
-	font-family: 'Carrois Gothic SC', sans-serif;
-}
-
-header h1 a {
-	text-decoration: none;
-	color:white;
-}
-#logo {
-	width: 350px;
-	height: 75px;
+}	
+body {
+	background: url("images/tweed.png");
 }
 
 footer{
-	margin: 0 auto;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	width: 90%;
-	width: 1148px;
-	text-align: right;
-	font-family: 'Inconsolata', sans-serif;
-}
-
-footer a {
-	text-decoration: none;
-	margin-left: 20px;
-	color: white;
-
+	clear: both;
 }
 
 
-
-
-
-#topNav {
-	margin: 15px 0 0 0;
-	width: 44%;
-	min-width: 800px;
-	float: right;
-	font-family: 'Inconsolata', sans-serif;
-	font-size: 20px;
-}
-
-#topNav ul li {
-	display: inline-block;
-}
-
-#topNav ul li a {
-	text-decoration: none;
-	color: white;
-}
-
-.navButton{
-	height: 25px;
-	width: 160px;
-	text-align: center;
-
-}
-#canvas {
-	margin: 0 auto;
-	max-width: 1148px;
-	background-color: lightgray;
-	opacity: 0.8;
-}
-
-.detailCanvas {
-	margin: 0 auto;
-	width: 1148px;
-	position: relative;
-	background-color: gray;
-}
-
-.sneakerObject {
-	margin: 10px 0px 10px 10px;
-	display: inline-block;
-}
-.sneakertext{
-	text-align: center;
-	font-family: 'Inconsolata', sans-serif;
-}
-
-
-.sneakertext ul li {
-	display: inline-block;
-}
-
-.sneakertext ul li  {
-	margin: 2px;
-	text-decoration: none;
-	font-size: 12px;
-	font-family: sans-serif;
-	color: black;
-}
-
-
-/* this is where i begin styling the detail page */ 
-.detailImages{
-	margin: 30px;
-	display: inline-block;
-}
-.detailSidebar{
-	position: absolute;
-	float: right;
-	margin: 30px 20px 10px 0px;
-	width: 450px;
-	display: inline-block;
-
-}
-.detailSmallThumbs{
-	display: block;
-}
-.detailSmallThumbs img {
+.product {
 	display: inline;
-	margin-top: 5px;
-	margin-right: 6px;
+	list-style: none;
 }
 
-.sneakerName {
-	margin-bottom: 20px;
-	font-size: 2.2em;
-	font-family: 'Carrois Gothic SC', sans-serif;
-}
-.sneakerDesc {
-	display: block;
-	font-size: 15px;
-	line-height: 1.3em;
-	font-family: 'Inconsolata', sans-serif;
-}
 
-.detailButtons {
-	margin-top: 30px;
-	text-align: right;
-}
-.cart {
-
-	height: 30px;
-	width: 130px;
-}
-
-.size {
-
-	height: 50px;
-	width: 60px;
-}
 
 
 .overlay {
+  display: none;
   position:fixed;
   top:0px;
   left:0px;
@@ -223,8 +88,8 @@ footer a {
 }
 
 .details {
+  display: none;
   position:fixed;
-  display:inline;
   left:0px;
   right:0px;
   top:0px;
@@ -240,3 +105,22 @@ footer a {
 #detail-description {
 	line-height: 1.2em;
 }
+
+
+/* body {background-color:000000;
+width:100%;
+background : url("image with same height as other bg images"),
+url("image with the same height as other background images"),
+url('image with the same height as other bg images");
+
+background-repeat:  no repeat,
+					no repeat,
+					no repeat;
+background-position: 0px 0px, 
+					 0px, 2 times the heightpx,
+					 0px, 3 times the heightpx,;
+
+max-width:960px;
+margin: 0 auto;
+}
+*/

@@ -1,16 +1,14 @@
 var Robots = {
 
-  bird: {
+  hurrache: {
     title: "Birdinator 4000",
-    subtitle: "Birdinator will solve your problems",
     price: 24.95,
     image: "images/bird_bot.png",
     description:  "Dynamics autonomous screw operator arm Gort wires. Motion axis diode device machine flexibility program scale direct numerical control solar interlock resistor. Rotary kawasaki motor pulley hose bolt yaw.",
   },
 
-  frog: {
+  gelLyte: {
     title: "Froginator 7500",
-    subtitle: "NOTHING will solve your problems",
     price: 40.95,
     image: "images/froggy_bot.png",
     description:  "Axle register no disassemble reach repair hydraulic singularity end-effector current LaGrange multipliers save. Ball joint machine pneumatic DARPA Bishop boop solenoid simulation. Sprocket rotary driver resistor flexibility hydraulic gear hose worm gear operator kinematics."
@@ -47,3 +45,4 @@ var Robots = {
   }
 
 };
+

@@ -76,6 +76,7 @@ ul,li {
 
 
 .overlay {
+  display: none;
   position:fixed;
   top:0px;
   left:0px;
@@ -86,6 +87,7 @@ ul,li {
 }
 
 .details {
+  display: none;
   position:fixed;
   left:0px;
   right:0px;
