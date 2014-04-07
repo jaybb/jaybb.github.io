@@ -98,7 +98,10 @@ h1 {
 	font-style: italic;
 }
 
+.smoothScroll{
+		font-family: 'Quantico', sans-serif;
 
+}
 
 #main-nav {
 	width: 100%;
