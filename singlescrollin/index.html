@@ -103,11 +103,7 @@
 					</div>
 				</div>
 
-				<footer>
-					Minimal Kicks<br>
-					1818 Beacon St.<br>
-					Boston MA 02120
-				</footer>
+
 			</section>	
 
 
@@ -138,12 +134,12 @@
 
 						        <button id='add-to-cart'>Add To Cart</button>
 						      <form action="/charge" method="POST">
-									<button id="customButton">Purchase</button>
+									<button id="customButton">Check Out</button>
 
 									<script>
 									  var handler = StripeCheckout.configure({
 									    key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
-									    image: '/square-image.png',
+									    image: 'images/square.gif',
 									    token: function(token, args) {
 									      // Use the token to create the charge with a server-side script.
 									      // You can access the token ID with `token.id`
@@ -153,9 +149,9 @@
 									  document.getElementById('customButton').addEventListener('click', function(e) {
 									    // Open Checkout with further options
 									    handler.open({
-									      name: 'Demo Site',
-									      description: '2 widgets ($20.00)',
-									      amount: 2000
+									      name: 'Minimal Kicks Shop',
+									      description: '1 Pair ($100.00)',
+									      amount: 10000
 									    });
 									    e.preventDefault();
 									  });
@@ -165,6 +161,10 @@
 
 						      </div>
 						</div>
-
+				<footer>
+					<P>
+						Minimal Kicks 1818 Beacon St. Boston MA 02120
+					</p>
+				</footer>
   </body>
 </html>

@@ -40,7 +40,7 @@ var Sneakers = {
   lebronXi: {
     title: "Nike Lebron XI King's Pride",
     price: 275.00,
-    image: "images/lebronxi",
+    image: "images/lebronxi.jpg",
     description:  "Although Lebron himself seems to prefer the tenth iteration of his sneaker line, Nike dropped the 11th version this year and so far they have been nothing but heat. The Kings Pride was the debut sneaker, and it's subtle posite colorway is accented by an intricate print to show the complexity of Jame's Game"
   }
 
