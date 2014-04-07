@@ -52,21 +52,35 @@ table {
 /* END RESET */
 
 
-#siteContainer {
-	height: 3050px;
-	background-image: url('images/singlescroll/01.jpg'),
-					  url('images/singlescroll/02.jpg'),
-					  url('images/singlescroll/03.jpg');
-	background-repeat: no-repeat;
-	background-position: 0 0, 0 1000px, 0 2000px;
-}
-
-
-
 body{
-	height: 3050px;
-	background-color: darkgray;
+	max-width: 100%;
 }
+
+#pageOne {
+	max-width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url('images/singlescroll/01.jpg');
+	background-repeat:no-repeat;
+}
+
+#pageTwo {
+	max-width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url('images/singlescroll/02.jpg');
+	background-repeat:no-repeat;
+
+}
+
+#pageThree {
+	max-width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url('images/tweed.png');
+
+}
+
 
 
 h1 {
@@ -77,101 +91,136 @@ h1 {
 	width: 25%;
 	color: white;
 	padding: 20px;
-	font-size: 70px;
-	font-family: 'akzidenz-grotesk_condensed_Rg';
+	font-size: 60px;
+	font-family: 'Quantico', sans-serif;
+	font-style: italic;
 }
 
-header{
-	background-color: white;
+
+
+#main-nav {
 	width: 100%;
-	height: 75px;
+	height: 50px;
 	position: fixed;
-	z-index: 1;
-	opacity: 0.8;
-}
+	left: 0px;
+	background-color: white;
+	opacity: .8;
+	z-index: 100;
 
-header ul {
-	padding: 15px 50px 0 50px;
 }
-
-header ul li {
-	font-family: helvetica, sans-serif;
-	font-weight: bold;
-	font-size:28px;
+#topLeft{
+	float: left;
+	font-family: 'Quantico', sans-serif;
+	font-size: 1.4em;
+	display: inline-block;
 	text-transform: uppercase;
-
-	display: inline;
+	padding-left: 100px;
+	padding-top: 15px;
 }
 
-header ul li a {
+#topLeft a {
 	text-decoration: none;
 	color: black;
 }
 
-header ul li  :hover {
-	text-decoration: underline;
+
+
+
+#productAbout {
+	font-family: 'Quantico', sans-serif;
+	font-size: 1.4em;
+	display: inline-block;
+	text-transform: uppercase;
+	float: right;
+	padding-right: 100px;
+	padding-top: 15px;
+}
+
+#productAbout a {
+	text-decoration: none;
 	color: black;
 }
-
-#introduction {
-	position: relative;
-	color: white;
-	font-size: 12px;
-	font-family: georgia;
-	float: left;
+#productAbout ul li {
+	display: inline-block;
+	padding-left: 30px;
 }
 
-#secondPageType {
-	position: absolute;
-	top: 1000px;
+
+
+#who {
+	font-family: 'Quantico', sans-serif;
+	font-style: italic;
+	font-size: 2em;
+	margin-bottom: 15px;
+	padding-top: 200px;
+}
+
+#description {
 	width: 300px;
+	font-size: 1em;
+	font-family: 'Quantico', sans-serif;
+	line-height: 1.5em;
+
+}
+#secondPageType {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
 	color: white;
-	font-family: sans-serif;
 
 }
 
 #thirdPageType {
-	position: absolute;
-	top: 2000px;
+	width: 792px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.product {
+	margin-bottom: 30px;
+}
+
+#productList {
+	margin: 0 auto;
+}
+
+#productList img {
+	opacity: .8;
 }
 
 #productList ul li  {
 	float: left;
+	padding-left: 30px;
 }
 
-.topNav {
-	float: right;
-	padding-left: 50px;
+#ourProducts {
+	font-family: 'Quantico', sans-serif;
+	width: 300px;
+	margin: 0 auto;
+	color: white;
+	font-size: 2em;
+	padding: 20px;
+}
+
+.sneakerName {
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	font-size: .8em;
+}
 
 
-}
-.centerPlease {
-}
 
 footer {
 	clear: both;
-	position: relative;
-	bottom: 0px;
+	color: white;
+	font-family: 'Quantico';
+	width: 960px;
+	margin: 0 auto;
+
+
 
 }
-
-
-
-/*this is da fonts dog */
-@font-face {
-    font-family: 'akzidenz-grotesk_condensed_Rg';
-    src: url('fonts/akzidenz_grotesk_r_condensed_medium_italic-webfont.eot');
-    src: url('fonts/akzidenz_grotesk_r_condensed_medium_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/akzidenz_grotesk_r_condensed_medium_italic-webfont.woff') format('woff'),
-         url('fonts/akzidenz_grotesk_r_condensed_medium_italic-webfont.ttf') format('truetype'),
-         url('fonts/akzidenz_grotesk_r_condensed_medium_italic-webfont.svg#akzidenz-grotesk_condensed_Rg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 
 
@@ -204,6 +253,56 @@ footer {
   border-radius:10px;
 }
 
+#detail-image {
+	float: left;
+}
 #detail-description {
+	font-family: courier;
+	font-size: .8em;
+	font-weight: lighter;
+	padding-left: 30px;
+	width: 300px;
+	float: left;
 	line-height: 1.2em;
 }
+
+#detail-price {
+	float: right;
+	font-family: courier;
+	font-weight: bold;
+	font-size: 1.3em;
+	padding-left: 30px;
+}
+
+#detail-options {
+float: left;
+margin-left: 30px;
+margin-top: 20px;
+font-family: courier;
+}
+
+#detail-quantity {
+	margin-top: 30px;
+}
+
+
+
+#add-to-cart {
+	clear: both;
+	margin-top: 30px;
+
+}
+
+#customButton {
+	margin-top:30px;
+	float: right; 
+
+}
+/* This button was generated using CSSButtonGenerator.com */
+
+#detail-title {
+	font-family: 'Quantico';
+	font-size:2em;
+	margin-bottom: 25px;
+}
+

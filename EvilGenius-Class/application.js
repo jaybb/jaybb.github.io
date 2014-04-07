@@ -3,7 +3,7 @@ function showProduct(name) {
 		$(".overlay").show();
 		$(".details").show();
 
-		$("#detail-title").text(robot.title);
+		 $("#detail-title").text(robot.title);
  		 $("#detail-description").text(robot.description);
  		 $("#detail-subtitle").text(robot.subtitle);
  		 $("#detail-price").text("$" + robot.price);

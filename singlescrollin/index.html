@@ -1,82 +1,114 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<meta charset="utf-8"/>
      <link href='style.css' rel='stylesheet'/>
      <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
      <script src='sneakers.js'></script>
      <script src='application.js'></script>
+	<link href='http://fonts.googleapis.com/css?family=Quantico:400italic' rel='stylesheet' type='text/css'>
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+  
 
   	<title>
-      MiniMal Kicks
+      Minimal Kicks
 	</title>
 
   </head>
 
 
   <body>
-			<header>
-				<ul>
-					<li>
-						<a href="top">minimal kicks</a>
-					</li>
-					<li class="topNav">
-						<a href="about">about us</a>
-					</li>
-					<li class="topNav">
-						<a href="products">products</a>
-					</li>
-				</ul>
-			</header>
+  	<div id="top"></div>
+  	<header>
+			<nav id="main-nav">
+				<div id="topLeft">
+					<a href="#top">minimal kicks</a>
+				</div>
+
+				<div id="productAbout">
+					<ul>
+						<li><a href="#products">products</a></li>
+						<li><a href="#about">about </a></li>
+						<li>   
+							<div id='cart'>
+							    Cart Empty
+							</div>
+						</li>
+					</ul>
+				</div>
 
 
-			<section id="siteContainer">
-					
+			</nav>
+		</header>
+
+
+			<section id="pageOne">
+
 					<h1>
 						MINIMAL KICKS
 					</h1>
-				
-
-					<div class="centerPlease">
-						<div id="secondPageType">
-								
-								Who We Are
-								We are a team of hard working entrepreneurs curating a premier online shopping experience for those looking for the most premium footwear and apparel products for the most reasonable prices.
-						</div>
-					</div>
+			</section>
 			
+			<section id="pageTwo">
+				<div id="about"></div>
+
+						<div id="secondPageType">
+								<div id="square">
+									<p id="who">About Minimal</p>
+									<p id="description">We are a team of hard working entrepreneurs curating a premier online shopping experience for those looking for the most premium footwear and apparel products for the most reasonable prices.
+									</p>
+								</div>
+						</div>
+
+			</section>
+			<section id="pageThree">
+				<div id="products"></div>
 				<div id="thirdPageType">
 					<div id="ourProducts">
-						Our Products:
+						Our Products
 					</div>
 					
 
 					<div id="productList">
 						<ul class="products">
-							<li class = "product" data-product-id="Hurrache Trainer">
+							<li class = "product" data-product-id="hurracheTrainer">
 								<img src="images/hurrache.jpg" alt="Hurrache Trainer"/>
+								<div class="sneakerName"> Nike Hurrache Trainer &ldquo;Slate Blue&rdquo;</div>
 							</li>
-							<li class = "product" data-product-id="Gel Lyte III">
+							<li class = "product" data-product-id="gelLyteI">
 								<img src="images/gelLyte.jpg" alt="Gel Lyte III"/>
+								<div class="sneakerName"> Asics Gel Lyte III &ldquo;Volcano&rdquo;</div>
 							</li>
 							
-							<li class = "product" data-product-id="Pump Fury">
+							<li class = "product" data-product-id="pumpFury">
 								<img src="images/pumpfury.jpg" alt="Reebok Pump Fury"/>
+								<div class="sneakerName"> Reebok Pump Fury &ldquo;Bape&rdquo;</div>
 							</li>
 							
-							<li class = "product" data-product-id="KA II">
+							<li class = "product" data-product-id="kaI">
 								<img src="images/kaii.jpg" alt="KA II"/>
+								<div class="sneakerName"> Converse KA II &ldquo;Cordovian Leather&rdquo;</div>
 							</li>
 							
-							<li class = "product" data-product-id="Sk8 Hi">
+							<li class = "product" data-product-id="sk8Hi">
 								<img src="images/sk8hi.jpg" alt="Sk8 Hi"/>
+								<div class="sneakerName"> Vans Sk8-Hi &ldquo;CNCPTS&rdquo;</div>
 							</li>
 				
-							<li class = "product" data-product-id="Lebron XI">
+							<li class = "product" data-product-id="lebronXi">
 								<img src="images/lebronxi.jpg" alt="Lebron XI"/>
+								<div class="sneakerName"> Nike Lebron XI &ldquo;Kings Pride&rdquo;</div>
 							</li>
 						</ul>
 					</div>
 				</div>
+
+				<footer>
+					Minimal Kicks<br>
+					1818 Beacon St.<br>
+					Boston MA 02120
+				</footer>
+			</section>	
 
 
 						<div class='overlay'></div>
@@ -91,29 +123,48 @@
 						        $24.94
 						      </div>
 						      <div id='detail-options'>
-						        Quantity: 
+						        Size: 
 						        <select id='detail-quantity'>
-						          <option value='1'>1</option>
-						          <option value='2'>2</option>
-						          <option value='3'>3</option>
+						          <option value='1'>8</option>
+						          <option value='1'>8.5</option>
+						          <option value='1'>9</option>
+						          <option value='1'>9.5</option>
+						          <option value='1'>10</option>
+						          <option value='1'>10.5</option>
+						          <option value='1'>11</option>
+						          <option value='1'>11.5</option>
+						          <option value='1'>12</option>
 						        </select>
 
 						        <button id='add-to-cart'>Add To Cart</button>
+						      <form action="/charge" method="POST">
+									<button id="customButton">Purchase</button>
+
+									<script>
+									  var handler = StripeCheckout.configure({
+									    key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+									    image: '/square-image.png',
+									    token: function(token, args) {
+									      // Use the token to create the charge with a server-side script.
+									      // You can access the token ID with `token.id`
+									    }
+									  });
+
+									  document.getElementById('customButton').addEventListener('click', function(e) {
+									    // Open Checkout with further options
+									    handler.open({
+									      name: 'Demo Site',
+									      description: '2 widgets ($20.00)',
+									      amount: 2000
+									    });
+									    e.preventDefault();
+									  });
+									</script>
+								</form>
+
+
 						      </div>
-						    </div>
-
-			<footer>
-					Minimal Kicks
-					1818 Beacon St.
-					Boston MA 02120
-				</footer>
-
-	
-
-
-		</section>
-
-
+						</div>
 
   </body>
 </html>
