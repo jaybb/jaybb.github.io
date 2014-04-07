@@ -133,30 +133,6 @@
 						        </select>
 
 						        <button id='add-to-cart'>Add To Cart</button>
-						      <form action="/charge" method="POST">
-									<button id="customButton">Check Out</button>
-
-									<script>
-									  var handler = StripeCheckout.configure({
-									    key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
-									    image: 'images/square2.gif',
-									    token: function(token, args) {
-									      // Use the token to create the charge with a server-side script.
-									      // You can access the token ID with `token.id`
-									    }
-									  });
-
-									  document.getElementById('customButton').addEventListener('click', function(e) {
-									    // Open Checkout with further options
-									    handler.open({
-									      name: 'Minimal Kicks Shop',
-									      description: '1 Pair ($100.00)',
-									      amount: 10000
-									    });
-									    e.preventDefault();
-									  });
-									</script>
-								</form>
 
 
 						      </div>

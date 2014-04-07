@@ -44,26 +44,60 @@ function updateCart (){
   }
 
     $("#cart").text("Cart" + ": $" + total.toFixed(2));
+
+    return total;
 	
 }
 
+function checkOut() {
+  var stripeKey = 'pk_test_V0SJ6QOh3rXO9s6Ysw0eHzzE';
 
+  var description = $("#cart").text();
+  var amount = updateCart() * 100;
+
+  var handler = StripeCheckout.configure({
+    key: stripeKey,
+    image: 'http://shop-example.herokuapp.com/images/bird_bot.png',
+    token: function(token, args) {
+      $.post("/buy", {
+        token: token.id,
+        amount: amount,
+        description: description
+      },function(data) {
+        alert(data.message);
+      });
+    }
+  });
+
+
+  handler.open({
+    name: 'Evil Genius Robot Supply',
+    description: description,
+    amount: amount
+  });
+
+}
+
+
+
+
+    //checkout to click on cart
 
 //when the page loads add in our event handlers 
 
 $(function() {
 
-
-$(".product").click(function(){
-
-var product = $(this).data ("product-id")
-	showProduct(product);
+  $(".product").click(function(){
+    var product = $(this).data ("product-id")
+    showProduct(product);
   });
 
-$(".overlay").click(function(){
+  $(".overlay").click(function(){
+    hideProduct();
+  });
 
-hideProduct();
-
-});
+  $("#cart").click(function(){
+  	checkOut();
+  });
 
 });
