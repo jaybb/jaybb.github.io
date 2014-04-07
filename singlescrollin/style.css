@@ -62,6 +62,7 @@ body{
 	margin: 0 auto;
 	background-image: url('images/singlescroll/01.jpg');
 	background-repeat:no-repeat;
+	background-size: cover;
 }
 
 #pageTwo {
@@ -70,6 +71,7 @@ body{
 	margin: 0 auto;
 	background-image: url('images/singlescroll/02.jpg');
 	background-repeat:no-repeat;
+	background-size: cover;
 
 }
 
