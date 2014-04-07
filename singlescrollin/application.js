@@ -57,7 +57,7 @@ function checkOut() {
 
   var handler = StripeCheckout.configure({
     key: stripeKey,
-    image: 'http://shop-example.herokuapp.com/images/bird_bot.png',
+    image: 'images/tinythumb.gif',
     token: function(token, args) {
       $.post("/buy", {
         token: token.id,
@@ -71,7 +71,7 @@ function checkOut() {
 
 
   handler.open({
-    name: 'Evil Genius Robot Supply',
+    name: 'Minimal Kicks',
     description: description,
     amount: amount
   });
