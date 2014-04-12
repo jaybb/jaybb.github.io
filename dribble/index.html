@@ -4,31 +4,78 @@
 	<meta charset="UTF-8">
 	<title>Dribble Grid</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>    
+    <script src="http://code.jquery.com/jquery-1.11.0.js"></script> 
 	<script type="text/javascript" src="application.js"></script>
 </head>	
+
 <body>
-
-<div id="shots">
-	<div class="post">
-		<img class="postImg" src="">
-		
-		<div class="postTitle">
-		</div>
-		
-		<div class="author">
-		</div>
-	</div>
+		<header> 
+      Popular Dribbble Posts
+    </header>
 
 
+    <div id="shots">
+		  <div class="post">
+        <img class="postImg" src="" alt="imagepost" />
+
+        <div class="postTitle">
+        </div>
+
+        <div class="author">
+        </div>
+
+        <div class="likes">
+        </div>
+
+      </div>
+    </div>
 
 
-</div>
+    <div class='overlay'></div>
+    <div class='details'>
 
+      <h2 id='detail-title'>
+        My Product Title
+      </h2>
 
+      <h3 id='detail-subtitle'>
+        Subtitle
+      </h3>
 
+      <img id='detail-image' src='https://pbs.twimg.com/profile_images/3037776107/e0f3061979c855a54c795070d38dfbb6.png' alt='peapod'/>
 
+      <p id='detail-description'>
+        Curabitur urna tellus, aliquam vitae, ultrices eget, vehicula nec, diam.
+        blandit venenatis, arcu dolor molestie dolor, vitae congue orci risus a.
+      </p>
 
+      <div class='clear'></div>
 
-</body>
+      <div id='detail-price'>
+        $24.94
+      </div>
+
+      <div id='detail-options'>
+        Quantity: 
+
+        <select id='detail-quantity'>
+          <option value='1'>
+            1
+          </option>
+          <option value='2'>
+            2
+          </option>
+          <option value='3'>
+            3
+          </option>
+        </select>
+
+        <button id='add-to-cart'>
+          Add To Cart
+        </button>
+
+      </div>
+    </div>
+
+  </body>
 </html>

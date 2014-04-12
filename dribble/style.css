@@ -50,6 +50,74 @@ table {
 
 /*   end of da reset homie  */
 
+body {
+	width: 960px;
+	margin: 0 auto;
+	background-color: rgb(232, 72, 69);
+}
+
+
+header {
+	color: white;
+	font-size: 2em;
+	font-family: georgia;
+	font-style: italic;
+}
+
+
 .post {
-	display: inline-block;
+	float: left;
+	background-color: ivory;
+	padding: 30px;
+	margin: 10px;
+	border-radius: 10%;
+	text-align: center;
+	line-height: 1.3em;
+}
+
+.post img {
+	border-radius: 15%;
+}
+
+.postTitle {
+	font-family: helvetica, sans-serif;
+	font-size: 13pt;
+}
+.author {
+	font-family: georgia;
+	font-style: italic;
+}
+
+.likes {
+	font-family: helvetica, sans-serif;
+	font-size: .6em;
+}
+
+
+
+.overlay {
+  display: none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:black;
+  opacity:0.5;
+  margin:0 auto;
+}
+
+.details {
+  display: none;
+  position:fixed;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+  width:700px;
+  height:500px;
+  background-color:white;
+  padding:20px 50px;
+  border-radius:10px;
 }
