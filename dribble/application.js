@@ -2,76 +2,68 @@
 $(function (){
 
    
-	//getting the data from dribble.com 
-	$.getJSON("http://api.dribbble.com/shots/popular?callback=?",function(data) {
+  //getting the data from dribble.com 
+  $.getJSON("http://api.dribbble.com/shots/popular?callback=?",function(data) {
     
-    	console.log(data);
+      console.log(data);
      
       //the loop
     for(var i=0;i<data.shots.length;i++) {
-   	 	var shot = data.shots[i] 
+      var shot = data.shots[i] 
+      var post = $("<div class='post'>");
 
-   	 	var postDiv = $("<div class='post'>");
-
-
-   	 	var postImage = $("<img class='postImage'>").attr("src",shot.image_teaser_url)
-   	 	postDiv.append(postImage)
-
-   	 	var postTitle = $("<div class='postTitle'>").text(shot.title)
-   	 	postDiv.append(postTitle)
-   	 	
-   	 	var author = $("<div class='author'>").text(shot.player.name)
-   	 	postDiv.append(author)
-
-      var likes = $("<div class='likes'>").text(shot.likes_count + " likes")
-      postDiv.append(likes)
-            ;
-
-   	 	// other stuff here
-   	 	//"http://d13yacurqjgara.cloudfront.net/users/13774/screenshots/1497598/wired_atlanta_teaser.jpg"
-
-   	 	$("#shots").append(postDiv);
 
     } 
 
 
-	}); //closes out the $get json function
-
-function showDetails () {
-  $(".overlay").show();
-  $("details").show();
-    }
-
-
-function hideDetails () {
-  $(".overlay").hide();
-  $(".details").hide();
-};
-
-
- //$function () {
- // $(".post").click(function (){
- //   showDetails();
- // });
-
-// $(".overlay").click(function(){
-//    hideDetails()
-//  }
-
-
+  }); //closes out the $get json function
 
 }); //closes out the original anonomyous function 
+    function createShot(shot) {
+      var post = $("<div class='post1'>")
+
+      var title = $("<div>").text(shot.title);
+      var thumb = $("<img class='thumbimg'>").attr("src",shot.image_teaser_url);
+      var postTitle = $("<div class='title'>").text(shot.title);
+      var author = $("<div class='author'>").text("Author: " + shot.player.name);
+      var likes = $("<div class='likesNumber'>").text(shot.likes_count + " likes")
+
+      
+      post.append(thumb);
+      post.append(title);
+      post.append(author);
+      post.append(likes);
+
+      $("#shots").append(post);
 
 
+      thumb.on("click",function() {
+        var detail = $("<div class='fulldetail'>")
+
+        var img = $("<img>").attr("src",shot.image_url);
+        var comments = $("<div class='comment'>").text("Comments: " + shot.comments_count);
+        var name = $("<div class='name'>").text("Name: " +shot.player.name);
+        var username = $("<div class='username'>").text("Username: " +shot.player.username);
+        var location = $("<div class='location'>").text("Location " + shot.player.location);
+        var twittername = $("<div class='twittername'>").text("Twitter Name: " +shot.player.twitter_screen_name);
+
+        detail.append(img);
+        detail.append(comments);
+        detail.append(name);
+        detail.append(username);
+        detail.append(location);
+        detail.append(twittername);
 
 
+        $("#detail").empty().append(detail);
 
 
-//ok ultra basic but that ^ establishes were showing and hiding and below actually makes it happen
-//when the page loads 
-
-
-
-
-
-
+      });
+    }
+    
+    $.getJSON("http://api.dribbble.com/shots/popular?callback=?",function(data) {
+      for(var i=0;i<data.shots.length;i++) {
+        // We need to save the current shot for later 
+        createShot(data.shots[i]);        
+      }
+    });
