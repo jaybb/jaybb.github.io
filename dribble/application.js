@@ -56,6 +56,7 @@ $(function (){
 
 
         $("#detail").empty().append(detail);
+        $("html, body").animate({ scrollTop: 0 }, "slow");
 
 
       });
