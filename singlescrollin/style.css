@@ -316,3 +316,6 @@ font-family: courier;
 	margin-bottom: 25px;
 }
 
+#cart {
+	cursor: pointer;
+}
