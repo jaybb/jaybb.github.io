@@ -52,7 +52,8 @@ table {
 
 body {
 	width: 960px;
-	margin: 0 auto
+	margin: 0 auto;
+	background-color:lightgray;
 }
 
 .container {

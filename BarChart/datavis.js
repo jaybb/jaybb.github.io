@@ -16,7 +16,7 @@ $(function (){
         
       var name = $("<div class='name'>").text(data[i][8]);
       var salarydiv = $("<div class='salary'>");
-      var width = salary / 100;
+      var width = salary / 500;
 
 
 
