@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="d3/d3.v3.js"></script>
+  
+	<title>Dribbble's Chattiest Users</title>
+</head>	
+
+  <body>
+    <h1> Dribbble's Chattiest Users</h1>
+
+
+    <div id="canvas"><img id="mapImage" alt="image" src="images/map01.png"></div>
+        
+        <script type="text/javascript">
+
+        function renderMap(data){
+        console.log(data)
+        data = data.slice(10);
+
+        //clickable stuff
+        var div = d3.select("body").append("div")
+        .attr("class", "tooltop")
+        .style("opacity", 0);
+
+    var width = 960,
+        height = 960;
+
+    var projection = d3.geo.mercator()
+    .scale((width + 1) / 2 / Math.PI)
+    .translate([width / 2, height / 2])
+    .precision(.1);
+
+
+
+
+        //creating the svg element
+        var svg = d3.select("#canvas")
+          .append("svg")
+          .attr ("class", "main")
+          .attr("width", 1020)
+          .attr("height", 900);
+
+        var color = d3.scale.linear()
+       .domain([
+
+        d3.min(data, function(d){
+        return d.comments_count;
+      }),
+        
+        d3.max(data, function(d){
+        return d.comments_count;
+      })])
+
+       .range(["lightpink", "red"]);
+      color(d3.max(data, function(d){
+        return d.comments_count;
+      }));
+
+        var circle = svg.selectAll ("circle")
+                      .data(data)
+                      .enter()
+                      .append("circle")
+                      .attr ("transform", function(d) {
+                        return "translate("+projection([d.longitude,d.latitude]) + ")" 
+                      })
+                      .attr("r", 3)
+                      .on ("mouseover", function(d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", 1);
+                    div.html(d.username + "<br/>" + d.location + "<br/>" + d.comments_count +"Comments")
+                    .style("left",(d3.event.pageX) + "px")
+                    .style("top", (d3.event.pageY - 100) + "px");
+                      })
+                      .on ("mouseout", function(d) {
+                        div.transition()
+                        .duration(500)
+                        .style ("opacity", 0);
+                      })
+                      .style("fill", function(d) {
+                       color(d.comments_count);
+                                    return color(d.comments_count);
+                                      });
+
+
+};
+
+
+
+
+         </script>    
+
+
+
+    <div class="findings"> 
+      Using Dribbble's open API I was able to look at the top 200 dribbble users who had given out the most  the most comments. I was interested in seeing where each one of these commenters hails from, and despite some users filling in their location information sarcastically, I was able to see some interesting patterns. 
+
+    </div>
+
+    <div id="pageTwo">
+      <div class="secondPageCircle">
+        <p class="findingstwo">
+          For a website that had <em>over 330,000 posts in 2013</em>, there really is not a large amount of total comments on the website. There are people who are generally pretty active commenters, but the ratio of shots to comments is still pretty far off. 
+        </p>
+      </div>
+
+    </div>
+
+    <div id="pageThree">
+      <div class="thirdPageCircle">
+        <p class="pageThreeFindings">
+          The heavest commenters on dribbble were generally from two places, central Europe, or the coastal parts of the United States. There were some interesting outliers in autralia and southern africa.
+        </p>
+      </div>
+
+
+      <div id="pageFour">
+        <div id="container">
+          <div id="aboutAlex">
+            The user with the greatest number of comments is <em class="mike"><a href="https://dribbble.com/michaelspitz" target="_blank">Michael Spitz</a></em>.
+           <br> Michael has commented a total of <em class="mike">7966</em> times, and hails from Philadelphia Pennsylvania.
+            <br>Michael has a total of <em class="mike">16,338</em> followers and follows <em class="mike">656</em> people, and has been using dribble since 2010
+            <br>
+          </div>
+
+        </div>
+        <div id="leftcontainer">
+          <div class="mikeicon">
+           <img id="spitz" src="images/spitz.png" width=200px height=200px>
+           <br><p id="work">Selected Work</p>
+          </div>
+                <div id="projectimgs">
+                <a href="https://dribbble.com/shots/1460790-ABOVE-BEYOND?list=users&offset=4" target="_blank"><img alt="projectone" src="images/linkimg/amp.png" height=200px width=200px/></a>
+                <a href="https://dribbble.com/shots/1536779-C-Check?list=users&offset=0" target="_blank"><img alt="projecttwo" src="images/linkimg/check.gif" height=200px width=200px/></a>
+                <a href="https://dribbble.com/shots/1238846-Dead-Threads-Secondary-Mark" target="_blank"><img alt="projectthree" src="images/linkimg/dead.png" height=200px width=200px/></a>
+                <a href="https://dribbble.com/shots/1168959-Spitfire" target="_blank"><img alt="projectfour" src="images/linkimg/spit.png" height=200px width=200px/></a>
+                <a href="https://dribbble.com/shots/1219376-Fast-Co-Magazine-Future-Tech" target="_blank"><img alt="projectfive" src="images/linkimg/tech.gif" height=200px width=200px/></a>
+                <a href="https://dribbble.com/shots/627422-Leafy-Shield?list=users&offset=78" target="_blank"><img alt="projectsix" src="images/linkimg/leaf.png" height=200px width=200px/></a>
+             
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+    
+
+  
+  <script type="text/javascript" src="http://design-trends.herokuapp.com/players.js?limit=250&order=comments_count&fields=location,longitude,latitude,username,comments_count&callback=renderMap"></script>       
+  </body>
+
+
+</html>

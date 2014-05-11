@@ -3,17 +3,74 @@
 <head>
 	<meta charset="UTF-8">
   <script type="text/javascript" src="d3/d3.v3.js"></script>
+  
 	<title>d3 trials</title>
 </head>	
 
   <body>
         <script type="text/javascript">
-        d3.select("body")
-        .append("p")
-        .text("new d3 paragraph!");
- 
-         </script>
-    
+        function renderGraph(data){
+        	console.log
+
+
+        	var svg = d3.select("body").append("svg")
+        								.attr("width", 960)
+        								.attr("height", 800)
+        								.style("background-color", "gray");
+        	
+        	var  xscale = d3.scale.linear(),
+        		 yscale = d3.scale.linear();
+        	
+        	var maxLikesReceived = d3.max(data, function(d) { return d.likes_received_count });
+
+        	      yscale.range([ 800, 50 ])
+        		  .domain([ 0, maxLikesReceived ]);
+        	
+
+        	var maxLikesCount = d3.max(data, function(d){ return d.likes_count });
+					xscale.range ([ 100,960 ])
+        		    .domain ([ 0, maxLikesCount ]);
+
+
+        	svg.selectAll("circle")
+          
+			.data(data)
+       		.enter()
+       		.append("circle")
+       		.attr("r", 5)
+       		.attr("cx", function(d){ return xscale(d.likes_count) })
+       		.attr("cy", function(d){ return yscale(d.likes_received_count) })
+       		.attr("fill", "turquoise" );
+
+
+
+       		var xAxis = d3.svg.axis()
+       		.scale(xscale)
+       		.orient("bottom");
+
+       		svg.append("g")
+       		.attr("transform", "translate(0,750)")
+       		.call(xAxis);
+
+       		var yAxis = d3.svg.axis()
+       		.scale(yscale)
+       		.orient("left");
+
+       		svg.append("g")
+       		.attr("transform", "translate(100,-50)")
+       		.call(yAxis);
+
+
+       };
+
+       
+
+         </script>    
+
+
+
+  
+  <script type="text/javascript" src="http://design-trends.herokuapp.com/players.js?limit=100&order=likes_received_count&fields=likes_received_count,likes_count,avatar_url,username&callback=renderGraph"></script>       
   </body>
 
 

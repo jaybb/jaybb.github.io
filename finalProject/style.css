@@ -1,0 +1,267 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*   end of da reset homie  */
+
+
+body { 
+	background-color: #e54986;
+	width: 960px;
+	height: 3800px;
+	font-size: 16px;
+	font-family: georgia;
+
+}
+
+
+.tooltop {
+	position: absolute;
+	background-color: white;
+	padding: 5px;
+	line-height: 1.3em;
+	border-radius: 5px;
+	color: black;
+	font-family: pt mono, sans-serif;
+	font-size: 9pt;
+}
+
+#canvas {
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+
+#mapImage {
+	position: absolute;
+	z-index: -1;
+}
+
+h1 {
+	position: absolute;
+	left: 20px;
+	top: 460px;
+	font-family: pt mono, sans-serif;
+	font-size: 1.6em;
+	color: white;	
+}
+
+
+.findings {
+	position: absolute;
+	left: 10px;
+	top: 500px;
+	width: 400px;
+	height:500px;
+	background-color: white;
+	padding:20px;
+	border-radius: 3px;
+	font-family: georgia, sans-serif;
+	line-height: 1.4em;
+	opacity: 1;
+
+
+}
+
+.findingstwo {
+	color: white;
+	font-family: georgia, sans-serif;
+	margin: 0 auto;
+	line-height: 1.4em;
+	margin-top: 75px;
+	text-align: center;
+
+}
+.secondPageCircle {
+	background-color: #e54986;
+	margin: 0 auto;
+	margin-top: 200px;
+	width: 300px;
+	height:300px;
+	padding:50px;
+	border-radius: 50%;
+	border: 5px solid white;
+}
+
+
+
+
+#pageTwo {
+	position: absolute;
+	top: 1000px;
+	height: 1000px;
+	width: 100%;
+	background: url(images/pageTwoBackground.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#pageThree {
+	position: absolute;
+	background-color: white;
+	background: url(images/coasts.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1000px;
+	width: 100%;
+	top: 2000px;
+}
+
+.pageThreeFindings {
+	color: white;
+	font-family: georgia, sans-serif;
+	line-height: 1.4em;
+	text-align: center;
+	margin-top: 90px;
+}
+
+.thirdPageCircle {
+	background-color: black;
+	margin: 0 auto;
+	margin-top: 300px;
+	width: 300px;
+	height:300px;
+	padding:50px;
+	border-radius: 50%;
+	border: 3px white solid;
+}
+
+
+#pageFour {
+	position: absolute;
+	top: 1000px;
+	width: 100%;
+
+}
+
+#container {
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	background-color: white;
+
+
+}
+
+#spitz {
+	border-radius: 50%;
+	border: 2px solid white;
+}
+#aboutAlex {
+	width: 80%;
+	text-align: left;
+	font-family: georgia, sans-serif;	
+	font-size: 24px;
+	line-height: 1.5em;
+	margin: 0 auto;
+	padding-top: 50px;
+	margin-top: 100px;
+}
+
+.mike {
+	color: #e54986;
+	font-size: 24px;
+	font-family: sans-serif;
+}
+
+
+.mikeicon {
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	padding-top:50px;
+	margin-bottom: 15px;
+	border-bottom: 1px dotted black; 
+
+}
+.mikeicon img {
+	margin-bottom: 30px;
+}
+
+
+
+em {
+	font-size: 18px;
+	color: black;
+	font-family: sans-serif;
+}
+
+
+#projectimgs {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#projectimgs img {
+	border-radius: 50%;
+	margin: 15px;	
+	border: 3px solid white;
+}
+
+#leftcontainer {
+	width: 60%;	
+}
+
+#work {
+	font-size: small;
+	color: white;
+	font-family: georgia;
+	margin-bottom: 10px;
+}
+a {
+	text-decoration: none;
+	color:#e54986;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:#e54986;
+}
