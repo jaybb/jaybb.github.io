@@ -52,53 +52,99 @@ table {
 
 body {
 	background: url(images/debut_dark.png);
+	font-size: 14pt;
+	font-family: 'Lato', sans-serif;
 }
-
-h1 img {
-	width: 250px;
-	height: auto;
-}
-#centerPage {
-	margin: 0 auto;
-	width: 70%;
-	height: 100%;
-	background-color: white;
-}
-
 h1 {
+	color: white;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	text-align: center;
 	font-family: sans-serif; 
 }
 
+h1 img {
+	width: 250px;
+	height: auto;
+}
+
+#site-header h1 a {
+	margin: 0 auto;
+	display: block;
+	width: 400px;
+	height: 200px;
+	background: url(images/logo.png) no-repeat, top left;
+	text-indent: -9999px;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.5em;
+	letter-spacing: .08em;
+	line-height: 1.3em;
+	color: #e03c31;
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+
+#countbox1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	margin: 10px;
+
+}
+
+#aboveCounter {
+	text-align: center;
+}
+
+#centerPage {
+	margin: 0 auto;
+	width: 70%;
+	height: 100%;
+	border-radius: 15px;
+	background-color: white;
+}
+
+
+
+#headsup {
+	font-size: 6em;
+}
+
 #topNav {
 	text-decoration: none;
 	text-align: center;
 	font-family: sans-serif;
+	font-variant: small-caps;
+	text-transform: lowercase;
 }
 
 #topNav ul li {
-	display: inline;
-	padding: 50px;
+	display: inline;;
+	padding: 30px;
 
 }
 
 #topNav ul li a {
-	font-family: 'Lato', sans-serif;
-	font-size: 1.2em;
+	font-size: 1em;
 	text-decoration: none;
-	color: black;
+	color: white;
 
 }
 
 #topNav ul li a:hover {
+	color: white;
 	text-decoration: underline;
 }
 
 #image {
 	position: relative;
 	margin-top: 50px;
+	padding-top: 20px;
 	text-align: center;
 	padding-bottom: 30px;
 
@@ -113,8 +159,7 @@ h1 {
 #together {
 	position: absolute;
 	margin: 13%;
-	font-family: 'Lato', sans-serif;
-	font-size: 5em;
+	font-size: 600%;
 	color: white;
 }
 
@@ -123,7 +168,6 @@ h1 {
 	text-align: left;
 	padding: 20px;
 	color: black;
-	font-family: 'Lato', sans-serif;
 	line-height:1.3em;
 }
 
@@ -141,7 +185,7 @@ footer ul {
 footer ul li {
 	display: inline;
 	padding: 40px;
-	font-family: 'Lato', sans-serif;
+
 	font-size: 1em;
 
 }
@@ -163,26 +207,70 @@ footer ul li a :hover {
 
 /* checklist page */ 
 
-#ugh {
+.mainCenterContainer {
 	margin: 0 auto;
 	width: 85%;
 	margin-top: 50px;
 	padding-bottom: 30px;
 	font-size: .8em;
 	line-height: 1.2em;
-	font-family: 'Lato', sans-serif;
+}
+
+.whyTitle {
+	color: #e03c31;
+	margin-top: 1.3em;
+	margin-bottom: 1em;
+	font-size: 1.1em;
+}
+
+.note {
+	font-size: 1em;
+	margin-top: 1em;
+	margin-bottom: .5em;
 }
 
 
 .topic {
 	font-size: 2em;
+	line-height: 1.3em;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 em {
-	color: #F05A28;
+	color: #e03c31;
+}
+
+
+.endPoint {
+	font-weight: bold;
+	margin-top: 2em;
+}
+
+.topicContainer {
+	background-color: rgb(50, 100, 50,);	
 }
 
 
 
+/* CONTACT FORM PAGE */
+
+.contactInfo {
+	width: 50%;
+	padding-top: 20px;
+}
+
+#contactForm {	
+	display: inline;
+	width: 200px;
+	height: 400px;
+	background-color: coral;
+}
+
+
+/*forum page */ 
+
+
+#wireframepic  {
+	text-align: center;
+}
