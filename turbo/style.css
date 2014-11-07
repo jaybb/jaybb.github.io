@@ -54,6 +54,8 @@ body {
 	width: 960px;
 	margin: 0 auto;
 	background-color: rgb(232, 72, 69);
+	background: url(images/gradient.jpg);
+	background-size: cover;
 
 }
 
@@ -68,40 +70,31 @@ header {
 	margin-top: 20px;
 }
 
-#shots{
-	width: 660px;
-	margin: 0 auto;
-}
-
-#shots img {
-}
-
-.post1 {
-	font-family: helvetica;
-	font-size: 12px;
-	line-height: 15pt;
-	float: left;
-	padding: 10px;
-	width: 200px;
-
-
-}
-
-.fulldetail {
-	background-color: brown;
-	width: 660px;
-	font-family: sans-serif;
-	color: ivory;
-	font-size: 9pt;	
-	line-height: 15pt;
+#hap {
+	font-family: orator std;
+	color: white;
+	font-size: 3em;
 	text-align: center;
+	margin-bottom: 60px;
 }
 
-.thumbimg {
-	cursor: pointer;
+
+#shape {
+	margin: 0 auto;
+	width: 400px;
+	height: 566px;
+	background-image: url(images/krill.jpg);
 }
 
-#detail img {
-	width: 660px;
-	height: auto;
+#shape:hover {
+-webkit-animation: fall 5s linear ;
+}
+
+@-webkit-keyframes fall {
+   0% { -webkit-transform: translate(0,0);
+          -webkit-transform: rotate(0deg);
+      }
+    100%{ -webkit-transform: rotate(720deg);}
+ 
+    
 }
