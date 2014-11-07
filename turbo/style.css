@@ -1,0 +1,107 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*   end of da reset homie  */
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	background-color: rgb(232, 72, 69);
+
+}
+
+
+header {
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	font-family: georgia;
+	font-style: italic;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+
+#shots{
+	width: 660px;
+	margin: 0 auto;
+}
+
+#shots img {
+}
+
+.post1 {
+	font-family: helvetica;
+	font-size: 12px;
+	line-height: 15pt;
+	float: left;
+	padding: 10px;
+	width: 200px;
+
+
+}
+
+.fulldetail {
+	background-color: brown;
+	width: 660px;
+	font-family: sans-serif;
+	color: ivory;
+	font-size: 9pt;	
+	line-height: 15pt;
+	text-align: center;
+}
+
+.thumbimg {
+	cursor: pointer;
+}
+
+#detail img {
+	width: 660px;
+	height: auto;
+}
