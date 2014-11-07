@@ -64,7 +64,7 @@ header {
 	text-align: center;
 	color: white;
 	font-size: 2em;
-	font-family: georgia;
+	font-family: orator std;
 	font-style: italic;
 	margin-bottom: 25px;
 	margin-top: 20px;
@@ -72,12 +72,17 @@ header {
 
 #hap {
 	font-family: orator std;
+	font-style: italic;
 	color: white;
 	font-size: 3em;
 	text-align: center;
 	margin-bottom: 60px;
 }
 
+#shots {
+	text-align: center;
+	margin: 40px;
+}
 
 #shape {
 	margin: 0 auto;
