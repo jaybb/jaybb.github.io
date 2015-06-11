@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="d3/d3.v3.js"></script>
+  
+	<title>Dribbble's Chattiest Users</title>
+</head>	
+
+  <body>
+    <h1> Dribbble's Chattiest Users</h1>
+
+
+    <div id="canvas"></div>
+        
+        <script type="text/javascript">
+
+        function renderMap(data){
+        console.log(data);
+
+        //clickable stuff
+        var div = d3.select("body").append("div")
+        .attr("class", "tooltop")
+        .style("opacity", 0);
+
+    var width = 960,
+        height = 960;
+
+    var projection = d3.geo.mercator()
+    .scale((width + 1) / 2 / Math.PI)
+    .translate([width / 2, height / 2])
+    .precision(.1);
+
+
+
+
+        //creating the svg element
+        var svg = d3.select("#canvas")
+          .append("svg")
+          .attr ("class", "main")
+          .attr("width", 1020)
+          .attr("height", 900);
+
+        var color = d3.scale.linear()
+       .domain([
+
+        d3.min(data, function(d){
+        return d.comments_count;
+      }),
+        
+        d3.max(data, function(d){
+        return d.comments_count;
+      })])
+
+       .range(["lightpink", "red"]);
+      color(d3.max(data, function(d){
+        return d.comments_count;
+      }));
+
+        var circle = svg.selectAll ("circle")
+                      .data(data)
+                      .enter()
+                      .append("circle")
+                      .attr ("transform", function(d) {
+                        return "translate("+projection([d.longitude,d.latitude]) + ")" 
+                      })
+                      .attr("r", 3)
+                      .on ("mouseover", function(d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", 1);
+                    div.html(d.username + "<br/>" + d.location + "<br/>" + d.comments_count +"Comments")
+                    .style("left",(d3.event.pageX) + "px")
+                    .style("top", (d3.event.pageY - 100) + "px");
+                      })
+                      .on ("mouseout", function(d) {
+                        div.transition()
+                        .duration(500)
+                        .style ("opacity", 0);
+                      })
+                      .style("fill", function(d) {
+                       color(d.comments_count);
+                                    return color(d.comments_count);
+                                      });
+
+
+};
+
+
+
+
+         </script>    
+
+
+
+  
+  <script type="text/javascript" src="http://hypem.com/playlist/popular/3day/json/1/data.js?limit=20&order=comments_count&fields=location,longitude,latitude,username,comments_count&callback=renderMap"></script>       
+  </body>
+
+
+</html>
