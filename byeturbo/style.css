@@ -81,3 +81,31 @@ h1 {
 	padding-top: 300px;
 	font-family: sans-serif;
 }
+
+/*#snail{
+	position: absolute;
+	right: 10px;
+	padding:30px;
+}*/
+
+#facebookpictures{
+	position: relative;
+	z-index: -5000;
+	max-width: 100%;
+	height:auto;
+}
+
+#gridtext {
+	position: fixed;
+	z-index: -4000;
+	padding: 3%;
+	background-color: aqua;
+	text-align: center;
+	top: 0px;
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+
+#sectiontwo {
+	height: 900px;
+}
