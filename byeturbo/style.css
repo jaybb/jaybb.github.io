@@ -61,18 +61,51 @@ body {
 	width: auto;
 }
 
+h1 {
+	font-family: sans-serif;
+	text-transform: lowercase;
+	font-size: 6em;
+}
+h2 {
+	font-family: georiga;
+	text-transform: uppercase;
+	letter-spacing: 3pt;
+	font-size: .8em;
+}
+
 #sectionone {
-	height:1334px;
+	height:800px;
 	width: 100%	;
 	background-color: coral;
-	margin: auto;
+}
+
+#sectiontwo {
+	height: 800px;
+	width: 100%;
+	background-color: lightgreen;
+}
+
+#sectiontwotext {
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 30%;
+	font-family: sans-serif;
+	line-height: 1.4em;
 
 }
 
-h1 {
-	font-family: orator std;
-	text-transform: lowercase;
-	font-size: 6em;
+#sectionfour{
+	height: 900px;
+	background-color: beige;
+	z-index: 1;
+}
+
+
+
+.header {
+	width: 50%;
+	margin:0 auto;
+	padding-top: 20%;
 }
 
 .type {
@@ -82,30 +115,25 @@ h1 {
 	font-family: sans-serif;
 }
 
-/*#snail{
-	position: absolute;
-	right: 10px;
-	padding:30px;
-}*/
-
 #facebookpictures{
 	position: relative;
-	z-index: -5000;
+	z-index: -5;
 	max-width: 100%;
 	height:auto;
 }
 
 #gridtext {
 	position: fixed;
-	z-index: -4000;
+	z-index: -4;
 	padding: 3%;
 	background-color: aqua;
+	border-radius: 2%;
 	text-align: center;
-	top: 0px;
+	top: 300px;
+	left: 40%;
+	width: 200px;
 	font-family: sans-serif;
 	margin: 0 auto;
+	line-height: 1.4em;
 }
 
-#sectiontwo {
-	height: 900px;
-}
