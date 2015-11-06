@@ -59,10 +59,10 @@ table {
 body {
 	height:10000px;
 	width: auto;
+	font-family: helvetica;
 }
 
 h1 {
-	font-family: sans-serif;
 	text-transform: lowercase;
 	font-size: 6em;
 }
@@ -75,32 +75,47 @@ h2 {
 
 #sectionone {
 	height:800px;
+	background: url(images/igbg.jpg);
+	background-size: cover;
 	width: 100%	;
-	background-color: coral;
+	color: white;
 }
 
 #sectiontwo {
 	height: 800px;
 	width: 100%;
-	background-color: lightgreen;
+	background-color: #fad2d2;
 }
 
 #sectiontwotext {
-	width: 400px;
+	width: 90%;
 	margin: 0 auto;
 	padding-top: 30%;
-	font-family: sans-serif;
-	line-height: 1.4em;
+	font-family: georgia;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3pt;
+	line-height: 1.8em;
+	font-size: .75em;
 
 }
 
 #sectionfour{
 	height: 900px;
-	background-color: beige;
+	background-color: #fad2d2;
 	z-index: 1;
 }
 
-
+#sectionfourtext {
+	width: 35%;
+	margin: 0 auto;
+	font-family: georgia;
+	font-size: .8em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1.5pt;
+	line-height: 1.8em;
+}
 
 .header {
 	width: 50%;
@@ -126,14 +141,23 @@ h2 {
 	position: fixed;
 	z-index: -4;
 	padding: 3%;
-	background-color: aqua;
-	border-radius: 2%;
+	background-color: #fffff0;
 	text-align: center;
 	top: 300px;
 	left: 40%;
 	width: 200px;
-	font-family: sans-serif;
+	font-family: georgia;
+	text-transform: uppercase;
+	font-size: .8em;
+	letter-spacing: 1.5pt;
 	margin: 0 auto;
-	line-height: 1.4em;
 }
 
+#shoshanna {
+	text-decoration: line-through;
+}
+
+#shoshanna:hover{
+	text-decoration: none;
+
+}
