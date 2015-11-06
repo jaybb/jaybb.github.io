@@ -64,6 +64,7 @@ body {
 
 h1 {
 	text-transform: lowercase;
+	font-family: dala floda;
 	font-size: 6em;
 }
 h2 {
@@ -88,13 +89,13 @@ h2 {
 }
 
 #sectiontwotext {
-	width: 90%;
+	width: 75%;
 	margin: 0 auto;
 	padding-top: 30%;
 	font-family: georgia;
 	text-transform: uppercase;
 	text-align: center;
-	letter-spacing: 3pt;
+	letter-spacing: 1.5pt;
 	line-height: 1.8em;
 	font-size: .75em;
 
@@ -111,10 +112,50 @@ h2 {
 	margin: 0 auto;
 	font-family: georgia;
 	font-size: .8em;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	text-align: center;
-	letter-spacing: 1.5pt;
 	line-height: 1.8em;
+	padding-top: 30%;
+}
+
+
+#sectionfive{
+	height: 900px;
+	background-color: green;
+	z-index: 1;
+}
+
+#sectionfivetext{
+	width: 35%;
+	margin: 0 auto;
+	font-family: georgia;
+	font-size: .8em;
+	text-transform: lowercase;
+	text-align: center;
+	line-height: 1.8em;
+	padding-top: 30%;
+}
+
+
+
+#polaroid {
+	position: absolute;
+}
+
+#glenn {
+	position: absolute;
+	padding-top: 500px;
+}
+
+#carrie {
+	position: absolute;
+	right:0;
+}
+
+#krill {
+	position: absolute;
+	padding-top: 700px;	
+	right: 0;
 }
 
 .header {
