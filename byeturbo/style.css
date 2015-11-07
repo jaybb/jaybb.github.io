@@ -57,7 +57,6 @@ table {
 
 
 body {
-	height:10000px;
 	width: auto;
 	font-family: helvetica;
 }
@@ -121,7 +120,7 @@ h2 {
 
 #sectionfive{
 	height: 900px;
-	background-color: green;
+	background-color: #fffff0;
 	z-index: 1;
 }
 
